@@ -1,42 +1,46 @@
+
+
+:root {
+  --containerBackgroundColor: #022859;
+  --primaryTextColor: #0554F2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex; 
+  background-color: var(--containerBackgroundColor);
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+}
+
+header h1, header h2 {
+  color: var(--primaryTextColor);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.email {
+  font-size: 2rem;
+  color: var(--primaryTextColor);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.profilePic {
+  width: 140px;
+  clip-path: circle(50%);
+  margin-right: 2rem;
 }
