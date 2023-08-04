@@ -3,6 +3,12 @@
 :root {
   --containerBackgroundColor: #022859;
   --primaryTextColor: #0554F2;
+  --hexagonShape: polygon(50% 0%, 90% 25%, 90% 55%, 50% 80%, 10% 55%, 10% 25%);
+  --maxContainerWidth: 2560px;
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 body {
@@ -18,29 +24,114 @@ body {
   width: 100%;
 }
 
+/* ~~~~~ Header ~~~~~ */
+
 header {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0.5rem 1rem; /* vertical 0.5, horizontal 1 */
   display: flex; 
   background-color: var(--containerBackgroundColor);
   align-items: center;
-  justify-content: space-between;
-  /* flex-direction: row; */
-  /* align-items: flex-start; */
+  justify-content: space-around;
+  align-items: center;
+  max-width: var(--maxContainerWidth);
+  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px; 
+  overflow: hidden;
 }
 
-header h1, header h2 {
+header * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1;
+}
+
+header .headerTitleWrap {
+  flex-grow: 2;
+}
+
+header h1, header h2, .email {
   color: var(--primaryTextColor);
   text-align: center;
+  /*white-space: nowrap; /* turn off text wrapping */
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+header h2 {
+  margin-top: 0.25rem;
+  font-size: 2rem;
 }
 
 .email {
   font-size: 2rem;
   color: var(--primaryTextColor);
+  /* text-align: center; */
+}
+
+.emailIcon {
+  width: 32px;
+  position: relative;
+  top: 3px;
 }
 
 .profilePic {
   width: 140px;
   clip-path: circle(50%);
   margin-right: 2rem;
+}
+
+
+
+/* ~~~~~ Skillsbar ~~~~~ */
+
+
+
+
+/* ~~~~~~~~ Media Queries ~~~~~~~~ */
+
+/* When below the max container width, we don't need to apply auto margins, instead apply enough to make the container look like it's floating.  */ 
+@media screen and (max-width: 2560px) {
+  /* ~~~~~ Header ~~~~~ */
+  header {
+    margin: 1.5rem 2rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* ~~~~~ Header ~~~~~ */
+  header {
+    margin: 1.5rem 1rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .email {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* ~~~~~ Header ~~~~~ */
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .email {
+    font-size: 1.35rem;
+  }
 }
