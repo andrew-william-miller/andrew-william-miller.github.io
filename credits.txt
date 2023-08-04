@@ -1,0 +1,14 @@
+Credits:
+
+This project uses icons from Font Awesome and Bootstrap.
+
+Font Awesome:
+- Website: https://fontawesome.com/
+- License: SIL Open Font License 1.1
+- License URL: https://scripts.sil.org/OFL
+
+Bootstrap Icons:
+- Website: https://icons.getbootstrap.com/
+- License: MIT License
+- License URL: https://opensource.org/licenses/MIT
+
