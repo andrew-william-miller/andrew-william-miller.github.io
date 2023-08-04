@@ -1,14 +1,39 @@
 Credits:
 
-This project uses icons from Font Awesome and Bootstrap.
+This project uses icons from various sources:
 
 Font Awesome:
-- Website: https://fontawesome.com/
-- License: SIL Open Font License 1.1
+- Website:     https://fontawesome.com/
+- License:     SIL Open Font License 1.1
 - License URL: https://scripts.sil.org/OFL
 
 Bootstrap Icons:
 - Website: https://icons.getbootstrap.com/
 - License: MIT License
-- License URL: https://opensource.org/licenses/MIT
+- License  URL: https://opensource.org/licenses/MIT
+
+Super Tiny Icons:
+- Creator:    Terence Eden
+- Website: https://iconduck.com/sets/super-tiny-icons
+- License: MIT License
+- License  URL: https://choosealicense.com/licenses/mit/
+
+Visual Studio Code Icons:
+- Website: https://iconduck.com/sets/visual-studio-code-icons
+- License: MIT License
+- License  URL: https://choosealicense.com/licenses/mit/
+
+Stack Icons
+- Website: https://iconduck.com/sets/stack-icons
+- License: Creative Commons Zero v1.0 Universal
+- License  URL: https://choosealicense.com/licenses/cc0-1.0/
+
+SVG Logos
+- Creator: Gil Barbara
+- Website: https://iconduck.com/sets/svg-logos
+- License: Creative Commons Zero v1.0 Universal
+- License  URL: https://choosealicense.com/licenses/cc0-1.0/
+
+
+
 

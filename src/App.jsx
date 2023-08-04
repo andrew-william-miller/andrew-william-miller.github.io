@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter, Route, Link, Routes, Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header'
+import Skills from './Components/Skills'
 
 function App() {
-
   return (
     <BrowserRouter>
           <Header />
           <Routes>
-            
+            <Route exact path="/" element={<Skills />} />
           </Routes>
     </BrowserRouter>
 
