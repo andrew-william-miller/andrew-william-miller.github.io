@@ -1,4 +1,4 @@
-import kirbyImage from '../assets/images/kirbyPlaceholder.png';
+import kirbyImage from '../assets/images/kirbyPlaceholder.jpg';
 
 const Header = () => {
 
