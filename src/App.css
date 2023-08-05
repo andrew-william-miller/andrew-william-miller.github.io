@@ -302,3 +302,13 @@ header h2 {
     height: 16rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .technologyWrap {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .skillsBar {
+    height: 22rem;
+  }
+}
