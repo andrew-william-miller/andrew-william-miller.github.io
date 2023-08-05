@@ -83,17 +83,19 @@ header h2 {
 
 /* ~~~~~ Skillsbar ~~~~~ */
 .skillsWrap {
-  background-color: var(--containerBackgroundColor);
   max-width: var(--maxContainerWidth);
   margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
-  border-radius: 20px; 
   overflow: hidden;
 }
 
 .skillsBar {
+  background-color: var(--containerBackgroundColor);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 6rem;
+  border-radius: 20px; 
+  margin-bottom: 1.5rem;
 }
 
 .skillsBar h1 {
@@ -117,6 +119,8 @@ header h2 {
   display: flex;
   flex-basis: content;
   flex-grow: 0;
+  align-self: flex-end; /* shift down the technology icons to the bottom of the SkillsBar */
+  /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
 }
 
 .skillIcon {

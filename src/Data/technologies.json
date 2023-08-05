@@ -1,6 +1,16 @@
 [
     { 
         "primaryTechnology": "ReactJS",
-        "technologies": ["react", "html", "css", "javascript"]
+        "technologies": ["React", "HTML", "CSS", "JavaScript", "API", "JSON"]
+    },
+
+    {
+        "primaryTechnology": "ASP.NET",
+        "technologies": ["C#", "SQL", "HTML", "CSS", "Bootstrap", "JavaScript", "Ruby", "API", "JSON"]
+    },
+
+    {
+        "primaryTechnology": "React Native",
+        "technologies": ["React", "SQLite", "API", "JSON"]
     }
 ]

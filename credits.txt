@@ -34,6 +34,25 @@ SVG Logos
 - License: Creative Commons Zero v1.0 Universal
 - License  URL: https://choosealicense.com/licenses/cc0-1.0/
 
+Windows Icons
+- Modified the Color of SQL Icon
+- Website: https://iconduck.com/sets/windows-icons
+- License: Creative Commons Attribution 3.0 International
+- License: URL: https://creativecommons.org/licenses/by/3.0/
+
+EOS Icon System
+- Modified the API Icon
+- Website: https://iconduck.com/sets/eos-icon-system
+- License: MIT License
+- LIcense: URL: https://choosealicense.com/licenses/mit/
+
+IT Symbols Collection 
+- Website: https://iconduck.com/sets/it-symbols-collection
+- License: Creative Commons Attribution 3.0 International
+- License: URL: https://creativecommons.org/licenses/by/3.0/
+
+
+
 
 
 
