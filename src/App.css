@@ -7,6 +7,7 @@
 
 #root {
   overflow-x: hidden;
+  background-color: black;
 }
 
 body {
@@ -121,6 +122,10 @@ header h2 {
   flex-grow: 0;
   align-self: flex-end; /* shift down the technology icons to the bottom of the SkillsBar */
   /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  top: 5px;
 }
 
 .skillIcon {

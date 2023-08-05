@@ -12,5 +12,30 @@
     {
         "primaryTechnology": "React Native",
         "technologies": ["React", "SQLite", "API", "JSON"]
+    },
+
+    {
+        "primaryTechnology": "PHP",
+        "technologies": ["PHP", "SQL", "HTML", "CSS", "Bootstrap", "JavaScript"]
+    },
+
+    {
+        "primaryTechnology": "Unity",
+        "technologies": ["Unity", "C#"]
+    },
+
+    {
+        "primaryTechnology": "Python",
+        "technologies": ["Python", "HTML"]
+    },
+
+    {
+        "primaryTechnology": "Java",
+        "technologies": ["Java", "XML"]
+    },
+
+    {
+        "primaryTechnology": "Lua",
+        "technologies": ["Lua", "API"]
     }
 ]

@@ -9,6 +9,12 @@ import cSharpIcon from '../assets/images/icons/technologies/c-sharp.svg'
 import sqliteIcon from '../assets/images/icons/technologies/sqlite.svg'
 import apiIcon from '../assets/images/icons/technologies/api.svg'
 import jsonIcon from '../assets/images/icons/technologies/json.svg'
+import pythonIcon from '../assets/images/icons/technologies/python.svg'
+import xmlIcon from '../assets/images/icons/technologies/xml.svg'
+import javaIcon from '../assets/images/icons/technologies/java.svg'
+import phpIcon from '../assets/images/icons/technologies/php.svg'
+import unityIcon from '../assets/images/icons/technologies/unity.svg'
+import luaIcon from '../assets/images/icons/technologies/lua.svg'
 
 /* Keys must match the values from the json data */
 const iconDictionary = {
@@ -22,7 +28,13 @@ const iconDictionary = {
     "C#": cSharpIcon,
     SQLite: sqliteIcon,
     API: apiIcon,
-    JSON: jsonIcon
+    JSON: jsonIcon,
+    Python: pythonIcon,
+    XML: xmlIcon,
+    Java: javaIcon,
+    PHP: phpIcon,
+    Unity: unityIcon,
+    Lua: luaIcon
 }
 
 const SkillsBar = ({ primarySkill, technologies }) => {
