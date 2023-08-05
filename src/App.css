@@ -160,7 +160,7 @@ header h2 {
 .skillIcon {
   width: 50%;
   position: relative;
-  top: -5px;
+  top: -6px;
 }
 
 /* Skill Bar Hexagon Logics */
@@ -207,8 +207,8 @@ header h2 {
   }
   
   .hexagonInner {
-    top: 2px;
-    left: 4px;
+    top: 3px;
+    /* left: 5px; */
     width: 70px;
     height: 70px;
   }
