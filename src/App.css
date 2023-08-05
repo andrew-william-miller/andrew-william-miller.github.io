@@ -89,6 +89,8 @@ header h2 {
   overflow: hidden;
 }
 
+/* old skillsBar backup */
+/* 
 .skillsBar {
   background-color: var(--containerBackgroundColor);
   display: flex;
@@ -98,39 +100,65 @@ header h2 {
   border-radius: 20px; 
   margin-bottom: 1.5rem;
 }
-
-.skillsBar h1 {
-  color: var(--primaryTextColor);
-  margin-left: 1.5rem;
+*/
+.skillsBar {
+  background-color: var(--containerBackgroundColor);
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  align-content: start;
+  row-gap: 0;
+  height: 6rem;
+  border-radius: 20px; 
+  margin-bottom: 1.5rem;
 }
 
-.skillsBar * {
-  flex-grow: 3;
-  flex-shrink: 1;
-  flex-basis: 1;
-}
-
+/* if using grid on skillsBar instead of flexbox */
 .skillsBar a {
-  flex-grow: 1;
-  text-align: right;
-  margin-right: 3rem;
+  align-self: center;
 }
 
 .technologyWrap {
-  display: flex;
-  flex-basis: content;
-  flex-grow: 0;
-  align-self: flex-end; /* shift down the technology icons to the bottom of the SkillsBar */
-  /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
-  margin-bottom: 0;
-  padding-bottom: 0;
+  /* align-self: flex-end; */
   position: relative;
   top: 5px;
 }
 
+.skillsBar h1 {
+  color: var(--primaryTextColor);
+  margin-left: 1.5rem;
+  max-width: 25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+
+
+.skillsBar a {
+  text-align: right;
+  display: block;
+  margin-right: 3rem;
+}
+
+.technologyWrap {
+  /* background-color: pink; */
+  min-width: 55rem;
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-basis: content;
+  /* flex-grow: 0; */
+  align-self: flex-end; /* shift down the technology icons to the bottom of the SkillsBar */
+  /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
+  margin-bottom: 0;
+  padding-bottom: 0;
+  /* if using flexbox */
+  /* position: relative;
+  top: 5px; */
+}
+
 .skillIcon {
   width: 50%;
-  flex-grow: 0;
   position: relative;
   top: -5px;
 }
