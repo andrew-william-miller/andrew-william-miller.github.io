@@ -190,6 +190,7 @@ footer {
   max-width: var(--maxContainerWidth);
   height: 3rem;
   background-color: var(--containerBackgroundColor);
+  /* border: 2px solid var(--containerBackgroundColor); */
   margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   border-radius: 20px; 
   display: flex;
