@@ -110,6 +110,9 @@ header h2 {
   /* row-gap: 0; */
   height: 6rem;
   border-radius: 20px; 
+}
+
+.skillsBar:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
@@ -132,8 +135,6 @@ header h2 {
   margin-bottom: 0;
   align-self: center;
 }
-
-
 
 .skillsBar a {
   text-align: right;
@@ -184,13 +185,29 @@ header h2 {
   justify-content: center;
 }
 
+/* ~~~~~ Footer ~~~~~ */
+footer {
+  max-width: var(--maxContainerWidth);
+  height: 3rem;
+  background-color: var(--containerBackgroundColor);
+  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: gray;
+}
+
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
 
 /* When below the max container width, we don't need to apply auto margins, instead apply enough to make the container look like it's floating.  */ 
 @media screen and (max-width: 2560px) {
-  /* ~~~~~ Header ~~~~~ */
-  header, .skillsWrap {
-    margin: 1.5rem 2rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  /* ~~~~~ Main Containers ~~~~~ */
+  header, .skillsWrap, footer {
+    margin: 1.5rem 1rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   }
 }
  /* ~~~~~ SkillsBar ~~~~~ */
@@ -295,7 +312,7 @@ header h2 {
   .technologyWrap {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Change to 5 columns */
-    grid-template-rows: auto; /* Create 2 rows */
+    grid-template-rows: auto; /* Create 2+ rows */
   }
 
   .skillsBar {

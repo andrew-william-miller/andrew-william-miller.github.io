@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link, Routes, Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './Components/Header'
 import Skills from './Components/Skills'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Skills />} />
           </Routes>
+          <Footer />
     </BrowserRouter>
 
   )
