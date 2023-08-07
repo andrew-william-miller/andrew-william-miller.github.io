@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import htmlIcon from '../assets/images/icons/technologies/html5.svg'
 import cssIcon from '../assets/images/icons/technologies/css.svg'
 import jsIcon from '../assets/images/icons/technologies/javascript.svg'
@@ -37,6 +38,17 @@ const iconDictionary = {
     Lua: luaIcon
 }
 
+const linkDictionary = {
+    "ReactJS": "/reactjs",
+    "ASP.NET": "",
+    "React Native": "",
+    "PHP": "",
+    "Unity": "",
+    "Python": "",
+    "Java": "",
+    "Lua": ""
+}
+
 const SkillsBar = ({ primarySkill, technologies }) => {
     return (
         <div className="skillsBar">
@@ -50,7 +62,7 @@ const SkillsBar = ({ primarySkill, technologies }) => {
                     </div>
                 ))}
             </div>
-            <a>See More...</a>
+            <Link to={linkDictionary[primarySkill]}>See More...</Link>
         </div>
     );
 }

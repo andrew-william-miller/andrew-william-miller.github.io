@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import kirbyImage from '../assets/images/kirbyPlaceholder.jpg';
 
 const Header = () => {
@@ -5,12 +6,14 @@ const Header = () => {
     return (
         <header>
             <div className="profilePicWrap">
-                <img className="profilePic" src={kirbyImage} />
+                <Link to="/"><img className="profilePic" src={kirbyImage} /></Link>
             </div>
-            <div className="headerTitleWrap">
-                <h1>Andrew William Miller</h1>
-                <h2>Software Developer</h2>
-            </div>
+            <Link to="/">
+                <div className="headerTitleWrap">
+                    <h1>Andrew William Miller</h1>
+                    <h2>Software Developer</h2>
+                </div>
+            </Link>
             <div className="emailWrap">
                 {/* <a className="email" href="mailto:andrew.william.miller7@gmail.com">Contact: Email <object className="emailIcon" data={emailIcon} type="image/svg+xml" alt="Email icon"></object></a> */}
                 <a className="email" href="mailto:andrew.william.miller7@gmail.com">Contact: Email &nbsp;
