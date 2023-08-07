@@ -4,11 +4,11 @@ import SkillsBar from './SkillsBar';
 const Skills = () => {
     // console.log(skillsetData);
     return (
-        <div className="skillsWrap">
+        <main className="skillsWrap">
             {skillsetData.map(skillset => (
                 <SkillsBar key={skillset.primaryTechnology} primarySkill={skillset.primaryTechnology} technologies={skillset.technologies} />
             ))}
-        </div>
+        </main>
     );
 }
 

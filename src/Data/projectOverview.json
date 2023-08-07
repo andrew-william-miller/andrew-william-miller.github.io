@@ -1,0 +1,20 @@
+{
+        "ReactJS":   {
+            
+            "qualificationImages": [
+                "reactJSEssentialTraining", "javaEssentialTrainingForStudents", 
+                "javaScriptClasses2018", "javaScriptEssentialTraining", 
+                "javaScriptEssentialTraining2017", "cSSEssentialTraining", 
+                "cSSForProgrammers", "cSSTransformsAndTransitions", 
+                "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
+            ],
+            "projectData": [
+                {
+                    "header": "Developer Portfolio Website",
+                    "description": "Created with Vite and ReactJS. Configured to be hosted on GitHub Pages.",
+                    "screenshots": [],
+                    "captions": []
+                }
+            ]
+        }
+}

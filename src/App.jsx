@@ -4,6 +4,8 @@ import './App.css'
 import Header from './Components/Header'
 import Skills from './Components/Skills'
 import Footer from './Components/Footer'
+import ProjectData from './Data/projectOverview.json'
+import Overview from './Components/Overview'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
           <Header />
           <Routes>
             <Route exact path="/" element={<Skills />} />
+            <Route exact path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} />} />
           </Routes>
           <Footer />
     </BrowserRouter>
