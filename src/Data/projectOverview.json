@@ -12,17 +12,19 @@
                 {
                     "header": "Developer Portfolio Website",
                     "description": "The website you're currently visiting. Created with Vite and ReactJS. Configured to be hosted on GitHub Pages.",
-                    "screenshots": [],
-                    "captions": []
+                    "screenshotsJpg": [],
+                    "captionsJpg": [],
+                    "screenshotsGif": [],
+                    "captionsGif": []
                 },
 
                 {
                     "header": "Māori Placenames Application",
                     "description": "React JS application I developed for an assessment.",
-                    "screenshots": ["maoriPlacenamesQuestion.jpg", "maoriPlacenamesAnsweringQuestion.gif"],
-                    "captions": ["The history table automatically builds as the user answers questions.",
-                    "Dynamic CSS styling and Randomized prompts / messages as the user plays the game to enhance the user experience"
-                    ]
+                    "screenshotsJpg": ["maoriPlacenamesQuestion"],
+                    "captionsJpg": ["The history table automatically builds as the user answers questions."],
+                    "screenshotsGif": ["maoriPlacenamesAnsweringQuestion"],
+                    "captionsGif": ["Dynamic CSS styling and Randomized prompts / messages as the user plays the game to enhance the user experience"]
                 }
             ]
         }
