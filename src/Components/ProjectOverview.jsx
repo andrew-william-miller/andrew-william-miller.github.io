@@ -4,6 +4,8 @@ import { getKeyFromSrc } from '../Utility/helperFunctions';
 
 // the screenshots are now keyvalue pairs, where the keys are the image names and the values are their associated captions.
 const ProjectOverview = ({ header, description, screenshotsJpgData, screenshotsGifData }) => {
+    console.log("Screenshot JPG Data in prop state: ", screenshotsJpgData);
+    console.log("Screenshot Gif Data in prop state: ", screenshotsGifData);
     // console.log(`Project Overview Data - header: ${header} description: ${description} screenshots: ${screenshots} captions: ${captions}`);
     const [loadedJpgScreenshots, setLoadedJpgSccreenshots] = useState([]);
     const [loadedGifScreenshots, setLoadedGifSccreenshots] = useState([]);
