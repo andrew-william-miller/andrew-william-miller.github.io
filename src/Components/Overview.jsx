@@ -49,7 +49,7 @@ const Overview = ({ qualificationImages, projectData }) => {
           <h1>Qualifications</h1>
           <p>These qualifications were gained to complement my primary qualifications and further strengthen my skills.</p>
           {loadedQualificationImages.map(imageSrc => (
-            <img key={getKeyFromSrc(imageSrc)} src={imageSrc}/>
+            <img className="qualificationImage" key={getKeyFromSrc(imageSrc)} src={imageSrc}/>
           ))}
         </div>
       }

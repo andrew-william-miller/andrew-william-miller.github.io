@@ -65,11 +65,13 @@ const ProjectOverview = ({ header, description, screenshotsJpgData, screenshotsG
     }, [screenshotsGifData]);
 
     return (
-        <>
+        <div className="projectWrap">
+            <h2>{header}</h2>
+            <p>{description}</p>
             {loadedJpgScreenshots.length + loadedGifScreenshots.length > 0 &&
                 <div className="screenshotOuterContainer">
                     {/* below p tag is just copy paste, TODO: implement descriptions and captions */}
-                    <p>These qualifications were gained to complement my primary qualifications and further strengthen my skills.</p>
+
                     {loadedJpgScreenshots &&
                         <div className="screenshotJpgContainer">
                             {loadedJpgScreenshots.map(imageSrc => (
@@ -93,7 +95,7 @@ const ProjectOverview = ({ header, description, screenshotsJpgData, screenshotsG
                     }
                 </div>
             }
-        </>
+        </div>
     );
 }
 

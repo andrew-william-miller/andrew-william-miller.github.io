@@ -203,12 +203,53 @@ footer p {
 }
 
 /* ~~~~~~~~ Overview ~~~~~~~~ */
+.projectWrap {
+  margin-bottom: 3rem;
+}
+
 .overviewContainer {
   max-width: var(--maxContainerWidth);
   background-color: var(--containerBackgroundColor);
   margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   border-radius: 20px; 
+}
 
+.overviewContainer p {
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
+}
+
+.overviewContainer h1 {
+  color: var(--primaryTextColor);
+  margin-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.overviewContainer h2 {
+  color: var(--primaryTextColor);
+  margin-left: 1.5rem;
+}
+
+.screenshotJpgContainer, .screenshotGifContainer, .qualificationsContainer {
+  max-width: 850px;
+}
+
+.qualificationImage, .projectScreenshot {
+  width: 100%;
+}
+
+figcaption {
+  color: white;
+  font-style: italic;
+}
+
+.qualificationsContainer {
+  margin-left: 1.5rem;
+}
+
+.screenshotJpgContainer figure, .screenshotGifContainer figure {
+  margin-bottom: 2rem;
 }
 
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
