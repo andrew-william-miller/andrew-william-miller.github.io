@@ -1,5 +1,12 @@
+// This approach means I should keep using camelCase for my image names (screenshots but everything else for consistency)
+// If I need to change my image naming in the future, I'll have to rework this logic, to remove just the hyphen and numbers at end without interfering with original hyphens
+// example of what the image name can become when deployed:  "/assets/maoriPlacenamesAnsweringQuestion-74576f25.gif" 
+// alternatively, I could extract the keys from the original json and use those.
 export const getKeyFromSrc = (imageSrc) => {
-    let fileExtension = imageSrc.substring(imageSrc.lastIndexOf("."));
+    // the build has a format of applying hyphen bunch of numbers then file extension at end of images, so have to add logic
+    // to slice that off so I can get the original image names.
+    let separator = imageSrc.lastIndexOf("-") !== -1 ? "-" : "."; // if a hyphen is not discovered, use the original 
+    let fileExtension = imageSrc.substring(imageSrc.lastIndexOf(separator));
     // console.log(`The file extension sliced off looks like this: ${fileExtension}`)
     // extracts the fileName from a src by looking at the index of the last /, incrementing by 1 to move past it, then replacing the .jpg extension with nothing.
     return imageSrc.substring(imageSrc.lastIndexOf("/")+1).replace(fileExtension, '');
