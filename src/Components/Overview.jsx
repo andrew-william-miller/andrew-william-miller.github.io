@@ -40,9 +40,7 @@ const Overview = ({ qualificationImages, projectData }) => {
           <h1>Projects</h1>
           {projectData.map(data => (
             /* render each of the projects here, passing in 1 block of project data */
-            <ProjectOverview key={data.header} header={data.header} description={data.description} screenshotsJpg={data.screenshotsJpg} captionsJpg={data.captionsJpg}
-            screenshotsGif={data.screenshotsGif} captionsGif={data.captionsGif}
-            />
+            <ProjectOverview key={data.header} header={data.header} description={data.description} screenshotsJpgData={data.screenshotsJpgData} screenshotsGifData={data.screenshotsGifData} />
           ))}
         </div>
       }

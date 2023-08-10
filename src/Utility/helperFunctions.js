@@ -1,6 +1,8 @@
 export const getKeyFromSrc = (imageSrc) => {
+    let fileExtension = imageSrc.substring(imageSrc.lastIndexOf("."));
+    // console.log(`The file extension sliced off looks like this: ${fileExtension}`)
     // extracts the fileName from a src by looking at the index of the last /, incrementing by 1 to move past it, then replacing the .jpg extension with nothing.
-    return imageSrc.substring(imageSrc[0].lastIndexOf("/")+1).replace('.jpg', '');
+    return imageSrc.substring(imageSrc.lastIndexOf("/")+1).replace(fileExtension, '');
 }
 
 /* I originally attempted to use this function to be slightly more explicit with the file extension when dynamically loading images
@@ -13,10 +15,8 @@ has 2 more parameters, and the projectOverview json has 2 more key value pairs w
 
 // I don't need this function any more, but I like the logic.
 export const splitNameExtension = (imageFileName) => {
-    // console.log(`HELPER FUNCTION data: ${imageFileName}`)
     let fileExtension = imageFileName.substring(imageFileName.lastIndexOf("."));
     let imageName = imageFileName.substring(0, imageFileName.lastIndexOf("."));
-    // console.log(`HELPER FUNCTION imageName: "${imageName}"`)
 
     return {
         "name" : imageName,
