@@ -3,7 +3,7 @@ import ProjectOverview from './ProjectOverview';
 import { getKeyFromSrc } from '../Utility/helperFunctions';
 
 
-const Overview = ({ qualificationImages, projectData }) => {
+const Overview = ({ qualificationImages, projectData, primaryTechnology }) => {
   /* ReactJS and React Native are not very good at dynamically loading images, you can't just specify a src using data from a passed in array to the component,
   have to perform additional steps using states, asyncronous code and promises. */
 
@@ -37,7 +37,7 @@ const Overview = ({ qualificationImages, projectData }) => {
     <main className="overviewContainer">
       {projectData &&
         <div className="projectOverviewWrap">
-          <h1>Projects</h1>
+          <h1>{primaryTechnology} Projects</h1>
           {projectData.map(data => (
             /* render each of the projects here, passing in 1 block of project data */
             <ProjectOverview key={data.header} header={data.header} description={data.description} screenshotsJpgData={data.screenshotsJpgData} screenshotsGifData={data.screenshotsGifData} />

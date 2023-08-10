@@ -13,7 +13,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="*" element={<Skills />} />
-            <Route exact path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} />} />
+            <Route exact path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} primaryTechnology={"ReactJS"} />} />
           </Routes>
           <Footer />
     </BrowserRouter>
