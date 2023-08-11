@@ -23,8 +23,63 @@
                         "maoriPlacenamesQuestion": "The history table automatically builds as the user answers questions."
                     },
                     "screenshotsGifData": {
-                        "maoriPlacenamesAnsweringQuestion": "Dynamic CSS styling and Randomized prompts / messages as the user plays the game to enhance the user experience."
+                        "maoriPlacenamesAnsweringQuestion": "Dynamic CSS styling and Randomized prompts / messages as the user plays the game to enhance the user experience.",
+                        "maoriAppTests": "Unit and Integration testing was implemented with Jest."
                     }
+                }
+            ]
+        },
+
+        "ASPNET":   {
+            
+            "qualificationImages": [
+                "learningCSharp", "beginnersGuideToCSharp",
+                "learningGitAndGitHub2015", "bootstrap4EssentialTraining",
+                "cSSEssentialTraining", "cSSForProgrammers", "cSSTransformsAndTransitions", 
+                "cSSEnhancingInterfacesWithAnimation", "javaEssentialTrainingForStudents", 
+                "javaScriptClasses2018", "javaScriptEssentialTraining", 
+                "javaScriptEssentialTraining2017"
+            ],
+            "projectData": [
+                {
+                    "header": "Carpet Cost Calculator",
+                    "description": "My First App in ASP.NET. Styled with CSS.",
+                    "screenshotsJpgData": {
+                        "carpetApp": "The results section remains hidden until submit clicked."
+                    },
+                    "screenshotsGifData": {
+                        "carpetAppTests": "This App implemented unit testing with xUnit."
+                    }
+                },
+                {
+                    "header": "Pizza Menu App",
+                    "description": "My second App in ASP.NET. Practicing the programming design pattern \"Factory Method\".",
+                    "screenshotsJpgData": {},
+                    "screenshotsGifData": {
+                        "pizzaApp": "Dynamically loads the right information using Factory Method logic."
+                    }
+                },
+                {
+                    "header": "Bike Shop App",
+                    "description": "An application created to practice ASP.NET MVC (Model-View-Controller) with a full database CRUD (CREATE, READ, UPDATE, DELETE).",
+                    "screenshotsJpgData": {
+                        "bikeShopRolesClaimsPermissions": "Roles and Claims logic was implemented to manage user account permissions."
+                    },
+                    "screenshotsGifData": {
+                        "bikeShopApp": "Built with ASP.NET MVC and T-SQL Server Management Studio."
+                    }
+                },
+                {
+                    "header": "Movie API App",
+                    "description": "This App uses an API from TMDB (The Movie Database).",
+                    "screenshotsJpgData": {"movieAPIApp": "This app also utilises T-SQL database for dynamic pages."},
+                    "screenshotsGifData": {}
+                },
+                {
+                    "header": "Ensight",
+                    "description": "User interface design prototype for the backend management of Staff Members at Ensight NZ. I built this application in ASP.NET with Database to implement mockdata I created at mockaroo for better testing. Interfaces for full database CRUD were developed.",
+                    "screenshotsJpgData": {},
+                    "screenshotsGifData": {"ensightStaffInterfaceAccordion": "Bootstrap Accordions were implemented to make the most of limited space."}
                 }
             ]
         }

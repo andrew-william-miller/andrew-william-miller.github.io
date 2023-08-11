@@ -28,15 +28,17 @@ body {
 /* ~~~~~~~~ Header ~~~~~~~~ */
 
 header {
-  padding: 0.5rem 1rem; /* vertical 0.5, horizontal 1 */
-  display: flex; 
+  padding: 0.5rem 1rem;
+  /* vertical 0.5, horizontal 1 */
+  display: flex;
   background-color: var(--containerBackgroundColor);
   align-items: center;
   justify-content: space-around;
   align-items: center;
   max-width: var(--maxContainerWidth);
-  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
-  border-radius: 20px; 
+  margin: 1.5rem auto 1rem;
+  /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -50,7 +52,9 @@ header .headerTitleWrap {
   flex-grow: 2;
 }
 
-header h1, header h2, .email {
+header h1,
+header h2,
+.email {
   color: var(--primaryTextColor);
   text-align: center;
   /*white-space: nowrap; /* turn off text wrapping */
@@ -59,6 +63,7 @@ header h1, header h2, .email {
 header h1 {
   margin-bottom: 0;
 }
+
 header h2 {
   margin-top: 0.25rem;
   font-size: 2rem;
@@ -87,7 +92,8 @@ header h2 {
 /* ~~~~~~~~ Skillsbar ~~~~~~~~ */
 .skillsWrap {
   max-width: var(--maxContainerWidth);
-  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  margin: 1.5rem auto 1rem;
+  /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   overflow: hidden;
 }
 
@@ -111,7 +117,7 @@ header h2 {
   /* align-content: start; */
   /* row-gap: 0; */
   height: 6rem;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .skillsBar:not(:last-child) {
@@ -151,7 +157,8 @@ header h2 {
   /* justify-content: flex-start; */
   flex-basis: content;
   /* flex-grow: 0; */
-  align-self: flex-end; /* shift down the technology icons to the bottom of the SkillsBar */
+  align-self: flex-end;
+  /* shift down the technology icons to the bottom of the SkillsBar */
   /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
   margin-bottom: 0;
   padding-bottom: 0;
@@ -193,8 +200,9 @@ footer {
   height: 3rem;
   background-color: var(--containerBackgroundColor);
   /* border: 2px solid var(--containerBackgroundColor); */
-  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
-  border-radius: 20px; 
+  margin: 1.5rem auto 1rem;
+  /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,11 +217,16 @@ footer p {
   margin-bottom: 3rem;
 }
 
+.projectWrap p {
+  width: 50%;
+}
+
 .overviewContainer {
   max-width: var(--maxContainerWidth);
   background-color: var(--containerBackgroundColor);
-  margin: 1.5rem auto 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
-  border-radius: 20px; 
+  margin: 1.5rem auto 1rem;
+  /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px;
 }
 
 .overviewContainer p {
@@ -223,7 +236,8 @@ footer p {
 }
 
 /* experimenting */
-figure, figcaption {
+figure,
+figcaption {
   padding: 12px;
   border-radius: 3%;
 }
@@ -234,15 +248,15 @@ figure, figcaption {
 
 figure {
   background-color: var(--altDarkBlue);
-z-index: 1;
-padding: 20px 15px 12px 15px;
-/* background-image: linear-gradient(var(--altDarkBlue), var(--altBrightBlue)); */
-/* the gradient blends the natural background color at the top into a brighter colour */
-background-image: linear-gradient(var(--containerBackgroundColor), var(--altBrightBlue));
-/* leaving out the top border helps the theme of merging the top into the background */
-border-left: 2px solid black;
-border-right: 2px solid black;
-border-bottom: 1px solid black;
+  z-index: 1;
+  padding: 20px 15px 12px 15px;
+  /* background-image: linear-gradient(var(--altDarkBlue), var(--altBrightBlue)); */
+  /* the gradient blends the natural background color at the top into a brighter colour */
+  background-image: linear-gradient(var(--containerBackgroundColor), var(--altBrightBlue));
+  /* leaving out the top border helps the theme of merging the top into the background */
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 figcaption {
@@ -250,6 +264,7 @@ figcaption {
   font-size: 1.1rem;
   text-align: center;
 }
+
 /* experimenting end */
 
 .overviewContainer h1 {
@@ -263,11 +278,13 @@ figcaption {
   margin-left: 1.5rem;
 }
 
-.screenshotJpgContainer, .screenshotGifContainer {
+.screenshotJpgContainer,
+.screenshotGifContainer {
   max-width: 850px;
 }
 
-.qualificationImage, .projectScreenshot {
+.qualificationImage,
+.projectScreenshot {
   width: 100%;
 }
 
@@ -284,20 +301,27 @@ figcaption {
   gap: 15px;
 }
 
-.screenshotJpgContainer figure, .screenshotGifContainer figure {
+.screenshotJpgContainer figure,
+.screenshotGifContainer figure {
   margin-bottom: 2rem;
 }
 
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
 
-/* When below the max container width, we don't need to apply auto margins, instead apply enough to make the container look like it's floating.  */ 
+/* When below the max container width, we don't need to apply auto margins, instead apply enough to make the container look like it's floating.  */
 @media screen and (max-width: 2560px) {
+
   /* ~~~~~~~~ Main Containers ~~~~~~~~ */
-  header, .skillsWrap, footer, .overviewContainer {
-    margin: 1.5rem 1rem 1rem; /* use this else auto center when the window is larger than max width (top, horizontal, bottom) */
+  header,
+  .skillsWrap,
+  footer,
+  .overviewContainer {
+    margin: 1.5rem 1rem 1rem;
+    /* use this else auto center when the window is larger than max width (top, horizontal, bottom) */
   }
 }
- /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
+
+/* ~~~~~~~~ SkillsBar ~~~~~~~~ */
 @media screen and (max-width: 1500px) {
   .skillsBar {
     /* background-color: pink; */
@@ -309,38 +333,49 @@ figcaption {
     width: 80px;
     height: 80px;
   }
-  
+
   .hexagonInner {
     top: 3px;
     /* left: 5px; */
     width: 70px;
     height: 70px;
   }
+
+  /* ~~~~~~~~ Overview ~~~~~~~~ */
+  .projectWrap p {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-   /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
+
+  /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
   .skillsBar h1 {
     font-size: 2.6rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
-   /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
-   .skillsBar a {
-    margin-right: 0.25rem;
-   }
 
-  /* ~~~~~~~~ Header / Overview ~~~~~~~~ */
-  header, .skillsWrap {
-    margin: 1.5rem 1rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
+  .skillsBar a {
+    margin-right: 0.25rem;
   }
 
-  header h1, .overviewContainer h1 {
+  /* ~~~~~~~~ Header / Overview ~~~~~~~~ */
+  header,
+  .skillsWrap {
+    margin: 1.5rem 1rem 1rem;
+    /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  }
+
+  header h1,
+  .overviewContainer h1 {
     font-size: 2.4rem;
   }
 
-  header h2, .overviewContainer h1  {
+  header h2,
+  .overviewContainer h1 {
     font-size: 1.8rem;
   }
 
@@ -350,15 +385,17 @@ figcaption {
 }
 
 @media screen and (max-width: 1100px) {
-/* ~~~~~~~~ SkillsBar ~~~~~~~~ */
+  /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
 
   .skillsBar h1 {
     margin-top: 0.5rem;
   }
 
   .skillsBar {
-    grid-template-columns: 1fr; /* Change to 1 column */
-    grid-template-rows: 1fr 1fr 1fr; /* Create 3 rows */
+    grid-template-columns: 1fr;
+    /* Change to 1 column */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* Create 3 rows */
     height: 10.5rem;
   }
 
@@ -375,44 +412,54 @@ figcaption {
 }
 
 @media screen and (max-width: 900px) {
-    /* ~~~~~~~~ Header ~~~~~~~~ */
-    header {
-      flex-direction: column;
-    }
 
-    header h1 {
-      font-size: 1.75rem;
-    }
+  /* ~~~~~~~~ Header ~~~~~~~~ */
+  header {
+    flex-direction: column;
+  }
 
-    header h2 {
-      font-size: 1.5rem;
-    }
+  header h1 {
+    font-size: 1.75rem;
+  }
 
-    .email {
-      font-size: 1.35rem;
-    }
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .email {
+    font-size: 1.35rem;
+  }
 
   /* ~~~~~ Overview ~~~~~ */
   .qualificationImageWrap {
     grid-template-columns: 1fr;
   }
 
-  .overviewContainer p, figure {
+  .overviewContainer p,
+  figure {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .overviewContainer h1, .overviewContainer h2 {
+  .overviewContainer h1,
+  .overviewContainer h2 {
     margin-left: 1rem;
+  }
+
+  .projectWrap p {
+    width: 94%;
   }
 }
 
 @media screen and (max-width: 800px) {
+
   /* ~~~~~~~~ Skills Bar ~~~~~~~~ */
   .technologyWrap {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Change to 5 columns */
-    grid-template-rows: auto; /* Create 2+ rows */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* Change to 5 columns */
+    grid-template-rows: auto;
+    /* Create 2+ rows */
   }
 
   .skillsBar {

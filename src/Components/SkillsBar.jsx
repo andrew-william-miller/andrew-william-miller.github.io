@@ -40,7 +40,7 @@ const iconDictionary = {
 
 const linkDictionary = {
     "ReactJS": "/reactjs",
-    "ASP.NET": "",
+    "ASP.NET": "/aspnet",
     "React Native": "",
     "PHP": "",
     "Unity": "",

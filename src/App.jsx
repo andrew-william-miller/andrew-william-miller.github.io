@@ -14,6 +14,7 @@ function App() {
           <Routes>
             <Route path="*" element={<Skills />} />
             <Route exact path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} primaryTechnology={"ReactJS"} />} />
+            <Route exact path="/aspnet" element={<Overview qualificationImages={ProjectData["ASPNET"].qualificationImages} projectData={ProjectData["ASPNET"].projectData} primaryTechnology={"ASP.NET"} />} />
           </Routes>
           <Footer />
     </BrowserRouter>
