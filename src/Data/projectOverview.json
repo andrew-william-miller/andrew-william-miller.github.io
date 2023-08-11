@@ -11,7 +11,7 @@
             "projectData": [
                 {
                     "header": "Developer Portfolio Website",
-                    "description": "The website you're currently visiting. Created with Vite and ReactJS. Configured to be hosted on GitHub Pages.",
+                    "description": "The website you're currently visiting. Created with Vite and ReactJS. Configured to be hosted on GitHub Pages. JSON is used to dynamically render the pages.",
                     "screenshotsJpgData": {},
                     "screenshotsGifData": {}
                 },

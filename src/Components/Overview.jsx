@@ -48,9 +48,14 @@ const Overview = ({ qualificationImages, projectData, primaryTechnology }) => {
         <div className="qualificationsContainer">
           <h1>Qualifications</h1>
           <p>These qualifications were gained to complement my primary qualifications and further strengthen my skills.</p>
-          {loadedQualificationImages.map(imageSrc => (
-            <img className="qualificationImage" key={getKeyFromSrc(imageSrc)} src={imageSrc}/>
-          ))}
+          <div className="qualificationImageWrap">
+            {loadedQualificationImages.map(imageSrc => (
+              <div className="qualificationImageContainer">
+                <img className="qualificationImage" key={getKeyFromSrc(imageSrc)} src={imageSrc}/>
+              </div>
+            ))}
+          </div>
+
         </div>
       }
     </main>

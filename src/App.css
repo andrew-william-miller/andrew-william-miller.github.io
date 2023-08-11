@@ -1,6 +1,8 @@
 :root {
   --containerBackgroundColor: #022859;
+  --altDarkBlue: #0339A6;
   --primaryTextColor: #0554F2;
+  --altBrightBlue: #0468BF;
   --hexagonShape: polygon(50% 0%, 90% 25%, 90% 55%, 50% 80%, 10% 55%, 10% 25%);
   --maxContainerWidth: 2560px;
 }
@@ -220,6 +222,36 @@ footer p {
   margin-left: 1.5rem;
 }
 
+/* experimenting */
+figure, figcaption {
+  padding: 12px;
+  border-radius: 3%;
+}
+
+.projectScreenshot {
+  border: 1px solid black;
+}
+
+figure {
+  background-color: var(--altDarkBlue);
+z-index: 1;
+padding: 20px 15px 12px 15px;
+/* background-image: linear-gradient(var(--altDarkBlue), var(--altBrightBlue)); */
+/* the gradient blends the natural background color at the top into a brighter colour */
+background-image: linear-gradient(var(--containerBackgroundColor), var(--altBrightBlue));
+/* leaving out the top border helps the theme of merging the top into the background */
+border-left: 2px solid black;
+border-right: 2px solid black;
+border-bottom: 1px solid black;
+}
+
+figcaption {
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* experimenting end */
+
 .overviewContainer h1 {
   color: var(--primaryTextColor);
   margin-left: 1.5rem;
@@ -231,7 +263,7 @@ footer p {
   margin-left: 1.5rem;
 }
 
-.screenshotJpgContainer, .screenshotGifContainer, .qualificationsContainer {
+.screenshotJpgContainer, .screenshotGifContainer {
   max-width: 850px;
 }
 
@@ -244,8 +276,12 @@ figcaption {
   font-style: italic;
 }
 
-.qualificationsContainer {
-  margin-left: 1.5rem;
+.qualificationImageWrap {
+  margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
 }
 
 .screenshotJpgContainer figure, .screenshotGifContainer figure {
@@ -258,7 +294,7 @@ figcaption {
 @media screen and (max-width: 2560px) {
   /* ~~~~~~~~ Main Containers ~~~~~~~~ */
   header, .skillsWrap, footer, .overviewContainer {
-    margin: 1.5rem 1rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+    margin: 1.5rem 1rem 1rem; /* use this else auto center when the window is larger than max width (top, horizontal, bottom) */
   }
 }
  /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
@@ -295,16 +331,16 @@ figcaption {
     margin-right: 0.25rem;
    }
 
-  /* ~~~~~~~~ Header ~~~~~~~~ */
+  /* ~~~~~~~~ Header / Overview ~~~~~~~~ */
   header, .skillsWrap {
     margin: 1.5rem 1rem 1rem; /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   }
 
-  header h1 {
+  header h1, .overviewContainer h1 {
     font-size: 2.4rem;
   }
 
-  header h2 {
+  header h2, .overviewContainer h1  {
     font-size: 1.8rem;
   }
 
@@ -336,25 +372,38 @@ figcaption {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
   }
-
 }
 
 @media screen and (max-width: 900px) {
-  /* ~~~~~~~~ Header ~~~~~~~~ */
-  header {
-    flex-direction: column;
+    /* ~~~~~~~~ Header ~~~~~~~~ */
+    header {
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+    }
+
+    .email {
+      font-size: 1.35rem;
+    }
+
+  /* ~~~~~ Overview ~~~~~ */
+  .qualificationImageWrap {
+    grid-template-columns: 1fr;
   }
 
-  header h1 {
-    font-size: 1.75rem;
+  .overviewContainer p, figure {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-  header h2 {
-    font-size: 1.5rem;
-  }
-
-  .email {
-    font-size: 1.35rem;
+  .overviewContainer h1, .overviewContainer h2 {
+    margin-left: 1rem;
   }
 }
 
