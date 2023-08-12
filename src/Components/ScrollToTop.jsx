@@ -5,6 +5,8 @@
     scrolled down.
     
     From the testing I did, on tvs, monitors and mobile I only noticed this to be problem on mobile. Either way, it seems to be fixed with this implementation. 
+
+    In terms of functionality, it brings you to the top of a page when changing to a new page in the browser router. 
 */
 
 import { useEffect } from "react";
