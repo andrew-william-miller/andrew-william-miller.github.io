@@ -243,7 +243,11 @@ figcaption {
 }
 
 .projectScreenshot {
-  border: 1px solid black;
+  /* border: 1px solid black; */ /* this line doesn't work well with the portrait logic, draws lines outside of the image because of object-fit: contain */
+  /* these lines are to help manage portrait images */
+  max-height: 600px;
+  object-fit: contain;
+  object-position: 50% 50%; /* This is the default but I want to be explicit about it */
 }
 
 figure {
@@ -257,6 +261,8 @@ figure {
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 1px solid black;
+  /* helps manage portrait images */
+  max-height: 700px;
 }
 
 figcaption {
