@@ -2,11 +2,9 @@
         "ReactJS":   {
             
             "qualificationImages": [
-                "reactJSEssentialTraining", "javaEssentialTrainingForStudents", 
-                "javaScriptClasses2018", "javaScriptEssentialTraining", 
-                "javaScriptEssentialTraining2017", "cSSEssentialTraining", 
-                "cSSForProgrammers", "cSSTransformsAndTransitions", 
-                "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
+                "reactJSEssentialTraining", "javaScriptClasses2018", "javaScriptEssentialTraining2017",
+                "javaEssentialTrainingForStudents", "cSSEssentialTraining", "cSSForProgrammers", 
+                "cSSTransformsAndTransitions", "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
             ],
             "projectData": [
                 {
@@ -36,9 +34,8 @@
                 "learningCSharp", "beginnersGuideToCSharp",
                 "learningGitAndGitHub2015", "bootstrap4EssentialTraining",
                 "cSSEssentialTraining", "cSSForProgrammers", "cSSTransformsAndTransitions", 
-                "cSSEnhancingInterfacesWithAnimation", "javaEssentialTrainingForStudents", 
-                "javaScriptClasses2018", "javaScriptEssentialTraining", 
-                "javaScriptEssentialTraining2017"
+                "cSSEnhancingInterfacesWithAnimation", "javaScriptClasses2018", "javaScriptEssentialTraining", 
+                "javaEssentialTrainingForStudents", "javaScriptEssentialTraining2017"
             ],
             "projectData": [
                 {
@@ -76,10 +73,53 @@
                     "screenshotsGifData": {}
                 },
                 {
-                    "header": "Ensight",
+                    "header": "Ensight Systems Development",
                     "description": "User interface design prototype for the backend management of Staff Members at Ensight NZ. I built this application in ASP.NET with Database to implement mockdata I created at mockaroo for better testing. Interfaces for full database CRUD were developed.",
                     "screenshotsJpgData": {},
                     "screenshotsGifData": {"ensightStaffInterfaceAccordion": "Bootstrap Accordions were implemented to make the most of limited space."}
+                }
+            ]
+        },
+        "React Native":   {
+            
+            "qualificationImages": [
+                "reactNativeEssentialTraining", "javaEssentialTrainingForStudents", "javaScriptClasses2018", "javaScriptEssentialTraining2017"            
+            ],
+            "projectData": [
+                {
+                    "header": "Educational Japanese Kana",
+                    "description": "A mobile app which helps to teach beginners in Japanese the Hiragana and Katakana alphabets. It uses an API to implement a Japanese/English Dictionary and an SQLite Database to track the users progress.",
+                    "screenshotsJpgData": {
+                        "koolKanaMainMenu": "Main Menu of my Kool Kana app.",
+                        "aboutScreenKoolKana": "About Screen for the Kool Kana app."
+                     },
+                    "screenshotsGifData": {
+                        "koolKanaAnsweringQuestions": "Learning Hiragana in the App.",
+                        "japaneseAPIDictionary": "Dictionary Implemented with API, to search with Japanese or English words."
+                }
+                }
+            ]
+        },
+        "PHP":   {
+            
+            "qualificationImages": [
+                "learningPHP", "javaScriptClasses2018", "javaScriptEssentialTraining", 
+                "javaEssentialTrainingForStudents", "javaScriptEssentialTraining2017", "cSSEssentialTraining", 
+                "cSSForProgrammers", "cSSTransformsAndTransitions", 
+                "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
+            ],
+            "projectData": [
+                {
+                    "header": "Carland Website",
+                    "description": "My first live website, developed for a student assignment. Hosted with Plesk. Various technologies used such as SQL.",
+                    "screenshotsJpgData": {"carlandApp": "Bootstrap cards were used with CSS to create a clean responsive layout."},
+                    "screenshotsGifData": {}
+                },
+                {
+                    "header": "Kawasaki Website",
+                    "description": "Another website student project similar to the above but implemented with additional features such as more filtering controls, video, and informational pages.",
+                    "screenshotsJpgData": {"kawasakiApp": "Taking advantage of prior code and spending time to develop additional new features."},
+                    "screenshotsGifData": {}
                 }
             ]
         }
