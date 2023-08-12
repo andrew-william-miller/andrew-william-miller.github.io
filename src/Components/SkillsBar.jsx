@@ -43,7 +43,7 @@ const linkDictionary = {
     "ASP.NET": "/aspnet",
     "React Native": "/reactnative",
     "PHP": "/php",
-    "Unity": "",
+    "Unity": "/unity",
     "Python": "",
     "Java": "",
     "Lua": ""

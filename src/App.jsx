@@ -6,10 +6,12 @@ import Skills from './Components/Skills'
 import Footer from './Components/Footer'
 import ProjectData from './Data/projectOverview.json'
 import Overview from './Components/Overview'
+import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
+          <ScrollToTop />
           <Header />
           <Routes>
             <Route path="*" element={<Skills />} />
@@ -17,6 +19,7 @@ function App() {
             <Route exact path="/aspnet" element={<Overview qualificationImages={ProjectData["ASPNET"].qualificationImages} projectData={ProjectData["ASPNET"].projectData} primaryTechnology={"ASP.NET"} />} />
             <Route exact path="/reactnative" element={<Overview qualificationImages={ProjectData["React Native"].qualificationImages} projectData={ProjectData["React Native"].projectData} primaryTechnology={"React Native"} />} />
             <Route exact path="/php" element={<Overview qualificationImages={ProjectData["PHP"].qualificationImages} projectData={ProjectData["PHP"].projectData} primaryTechnology={"PHP"} />} />
+            <Route exact path="/unity" element={<Overview qualificationImages={ProjectData["Unity"].qualificationImages} projectData={ProjectData["Unity"].projectData} primaryTechnology={"Unity"} />} />
           </Routes>
           <Footer />
     </BrowserRouter>

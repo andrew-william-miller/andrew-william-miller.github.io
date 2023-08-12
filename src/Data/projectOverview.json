@@ -3,7 +3,7 @@
             
             "qualificationImages": [
                 "reactJSEssentialTraining", "javaScriptClasses2018", "javaScriptEssentialTraining2017",
-                "javaEssentialTrainingForStudents", "cSSEssentialTraining", "cSSForProgrammers", 
+                 "cSSEssentialTraining", "cSSForProgrammers", 
                 "cSSTransformsAndTransitions", "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
             ],
             "projectData": [
@@ -35,7 +35,7 @@
                 "learningGitAndGitHub2015", "bootstrap4EssentialTraining",
                 "cSSEssentialTraining", "cSSForProgrammers", "cSSTransformsAndTransitions", 
                 "cSSEnhancingInterfacesWithAnimation", "javaScriptClasses2018", "javaScriptEssentialTraining", 
-                "javaEssentialTrainingForStudents", "javaScriptEssentialTraining2017"
+                "javaScriptEssentialTraining2017"
             ],
             "projectData": [
                 {
@@ -83,7 +83,7 @@
         "React Native":   {
             
             "qualificationImages": [
-                "reactNativeEssentialTraining", "javaEssentialTrainingForStudents", "javaScriptClasses2018", "javaScriptEssentialTraining2017"            
+                "reactNativeEssentialTraining", "javaScriptClasses2018", "javaScriptEssentialTraining2017"            
             ],
             "projectData": [
                 {
@@ -115,8 +115,8 @@
         "PHP":   {
             
             "qualificationImages": [
-                "learningPHP", "javaScriptClasses2018", "javaScriptEssentialTraining", 
-                "javaEssentialTrainingForStudents", "javaScriptEssentialTraining2017", "cSSEssentialTraining", 
+                "learningPHP", "javaScriptClasses2018", "javaScriptEssentialTraining",
+                "javaScriptEssentialTraining2017", "cSSEssentialTraining", 
                 "cSSForProgrammers", "cSSTransformsAndTransitions", 
                 "cSSEnhancingInterfacesWithAnimation", "bootstrap4EssentialTraining"
             ],
@@ -131,6 +131,25 @@
                     "header": "Kawasaki Website",
                     "description": "Another website student project similar to the above but implemented with additional features such as more filtering controls, video, and informational pages.",
                     "screenshotsJpgData": {"kawasakiApp": "Taking advantage of prior code and spending time to develop additional new features."},
+                    "screenshotsGifData": {}
+                }
+            ]
+        },
+        "Unity":   {
+            
+            "qualificationImages": [
+                "learningCSharp", "gitHubEssentialTraining", "learningGitAndGitHub2015"
+            ],
+            "projectData": [
+                {
+                    "header": "Māori Scribe",
+                    "description": "Māori language version of Scrabble. Developed for Haeata Community Campus to help students learn the Māori language.",
+                    "screenshotsJpgData": {
+                        "maoriScribeMainMenu": "Animated Main Menu. Randomized Māori words in the background. Many game options.",
+                        "maoriScribeTOCManual": "The Manual Table of Contents.",
+                        "maoriScribeManualPageExample": "One of the Many Pages of the manual I wrote, designed and implemented.",
+                        "maoriScribeNewGame": "The Game board, just starting a new game. Contains additional features such as the Māori dictionary word lookup."
+                    },
                     "screenshotsGifData": {}
                 }
             ]
