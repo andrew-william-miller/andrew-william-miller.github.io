@@ -97,6 +97,18 @@
                         "koolKanaAnsweringQuestions": "Learning Hiragana in the App.",
                         "japaneseAPIDictionary": "Dictionary Implemented with API, to search with Japanese or English words."
                 }
+                },
+                {
+                    "header": "To Do List",
+                    "description": "Allows users to keep track of their duties. All the data is saved to an SQLite database. Almost every action in the app involves database calls.",
+                    "screenshotsJpgData": {
+                        "taskMasterMainMenu": "Main Menu of my Task Master app."
+                     },
+                    "screenshotsGifData": {
+                        "listViewScreen": "Navigating the list items on the main viewing screen.",
+                        "listEditingScreen": "Entering the editing screen to update a list item.",
+                        "deletingItemsTaskMaster": "Deleting list items by swiping them off the screen."
+                     }
                 }
             ]
         },

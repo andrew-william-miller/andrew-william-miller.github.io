@@ -282,6 +282,7 @@ figcaption {
 .overviewContainer h2 {
   color: var(--primaryTextColor);
   margin-left: 1.5rem;
+  font-size: 2.1rem;
 }
 
 .screenshotJpgContainer,
@@ -382,12 +383,18 @@ figcaption {
 
   header h2,
   .overviewContainer h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  .overviewContainer h2 {
+    font-size: 1.6rem;
   }
 
   .email {
     font-size: 1.5rem;
   }
+
+  
 }
 
 @media screen and (max-width: 1100px) {
