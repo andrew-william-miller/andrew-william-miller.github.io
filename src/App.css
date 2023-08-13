@@ -213,6 +213,17 @@ footer p {
 }
 
 /* ~~~~~~~~ Overview ~~~~~~~~ */
+.projectOverviewWrap {
+  /* something is causing padding bottom value to extend much larger than the declared value. If declared 0 it is 0, else it's much larger
+  Required so that when no Qualifications are listed for the page, there is still spacing between this container and the end of the main container */
+  padding-bottom: 5px;
+}
+
+.qualificationsContainer h1 {
+  /* The project overview has spacing below, so this doesn't need any above.*/
+  margin-top: 0;
+}
+
 .projectWrap {
   margin-bottom: 3rem;
 }
@@ -235,7 +246,7 @@ footer p {
   margin-left: 1.5rem;
 }
 
-/* experimenting */
+/* Screenshot presentation logic */
 figure,
 figcaption {
   padding: 12px;
@@ -271,7 +282,7 @@ figcaption {
   text-align: center;
 }
 
-/* experimenting end */
+/* Screenshot presentation logic end */
 
 .overviewContainer h1 {
   color: var(--primaryTextColor);

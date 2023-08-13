@@ -151,6 +151,29 @@
                         "maoriScribeNewGame": "The Game board, just starting a new game. Contains additional features such as the Māori dictionary word lookup."
                     },
                     "screenshotsGifData": {}
+                },
+                {
+                    "header": "Build With Me",
+                    "description": "3D Building Game developed for Callaghan Innovation. Build in pairs to existing templates or work towards a custom creation.",
+                    "screenshotsJpgData": {
+                        "buildWithMeMainMenu": "Main Menu with game mode options and art created from the game itself.",
+                        "buildWithMeTemplate": "One of the many templates you can build. The build pieces given are random, but always usable.",
+                        "buildWithMeFreeBuildMode": "An example of a creation when not building to a template. Endless possibilities.",
+                        "buildWithMeCameraManagement": "Camera controls implemented to give a better view in the 3D building environment."
+                    },
+                    "screenshotsGifData": {}
+                }
+            ]
+        },
+        "Python":   {
+            
+            "qualificationImages": [],
+            "projectData": [
+                {
+                    "header": "Web Scraper",
+                    "description": "My first python assignment from the advanced programming degree course. The purpose was to automatically mine key product data and calculate statistics from it. The website is no longer live, but I can show my UML diagram created as part of the design process.",
+                    "screenshotsJpgData": {"webScraperUMLClassDiagram": "UML Class Diagram for my Python Web Scraper."},
+                    "screenshotsGifData": {}
                 }
             ]
         }

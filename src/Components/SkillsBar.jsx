@@ -38,13 +38,14 @@ const iconDictionary = {
     Lua: luaIcon
 }
 
+// Used to assist in creating dynamic links.
 const linkDictionary = {
     "ReactJS": "/reactjs",
     "ASP.NET": "/aspnet",
     "React Native": "/reactnative",
     "PHP": "/php",
     "Unity": "/unity",
-    "Python": "",
+    "Python": "/python",
     "Java": "",
     "Lua": ""
 }

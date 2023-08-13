@@ -44,7 +44,7 @@ const Overview = ({ qualificationImages, projectData, primaryTechnology }) => {
           ))}
         </div>
       }
-      {loadedQualificationImages &&
+      {loadedQualificationImages.length > 0 &&
         <div className="qualificationsContainer">
           <h1>Qualifications</h1>
           <p>These credentials were acquired to complement my core qualifications and bolster my expertise in {primaryTechnology} development.</p>
