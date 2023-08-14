@@ -36,6 +36,6 @@
 
     {
         "primaryTechnology": "Miscellaneous",
-        "technologies": ["Lua", "API"]
+        "technologies": ["Lua", "API", "HTML", "CSS", "JavaScript"]
     }
 ]

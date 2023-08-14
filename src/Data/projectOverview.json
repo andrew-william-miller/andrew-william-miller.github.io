@@ -230,6 +230,18 @@
                     "screenshotsGifData": {
                         "canvasAnimation": "The beginning of the animation."
                     }
+                },
+                {
+                    "header": "Maze Game",
+                    "description": "More JavaScript Canvas Animation. Created for an assignment. The goal is to reach the exit, blowing through blockades by picking up bombs and using them with spacebar. Reaching the end of the level would transition you into the next level.",
+                    "screenshotsJpgData": {"mazeGameStartMenu": "Start Menu for the Maze Game."},
+                    "screenshotsGifData": {"mazeGameInAction": "Collecting a bomb to clear the first blockade."}
+                },
+                {
+                    "header": "JavaScript Timer",
+                    "description": "A Timer made with JavaScript and CSS. Various options for audio levels, pre-emptive alerts, and different sounds.",
+                    "screenshotsJpgData": {},
+                    "screenshotsGifData": {"jsTimer": "Timer in action."}
                 }
             ]
         }
