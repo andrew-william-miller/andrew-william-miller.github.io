@@ -47,7 +47,7 @@ const linkDictionary = {
     "Unity": "/unity",
     "Python": "/python",
     "Java": "",
-    "Lua": ""
+    "Miscellaneous": "/miscellaneous"
 }
 
 const SkillsBar = ({ primarySkill, technologies }) => {

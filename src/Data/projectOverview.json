@@ -188,5 +188,17 @@
                     }
                 }
             ]
+        },
+        "Miscellaneous":   {
+            
+            "qualificationImages": [],
+            "projectData": [
+                {
+                    "header": "World of Warcraft Addon - 'Message Alert'",
+                    "description": "An addon I created for the popular MMORPG World of Warcraft. This added uses the Lua programming language and Blizzard API. The purpose of the addon is to play a customisable notification sound when receiving private messages, reducing the chance of missing them. One of the challenges during development was the lack of documentation on creating these addons.",
+                    "screenshotsJpgData": {"wowMessageAlertAddonCodeSnippet": "These addons are develooped using an event-driven architecture enabling developers respond to respond to in-game events for personalized interactions."},
+                    "screenshotsGifData": {}
+                }
+            ]
         }
 }
