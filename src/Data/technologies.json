@@ -35,7 +35,7 @@
     },
 
     {
-        "primaryTechnology": "Lua",
+        "primaryTechnology": "Miscellaneous",
         "technologies": ["Lua", "API"]
     }
 ]
