@@ -21,6 +21,7 @@ function App() {
             <Route exact path="/php" element={<Overview qualificationImages={ProjectData["PHP"].qualificationImages} projectData={ProjectData["PHP"].projectData} primaryTechnology={"PHP"} />} />
             <Route exact path="/unity" element={<Overview qualificationImages={ProjectData["Unity"].qualificationImages} projectData={ProjectData["Unity"].projectData} primaryTechnology={"Unity"} />} />
             <Route exact path="/python" element={<Overview qualificationImages={ProjectData["Python"].qualificationImages} projectData={ProjectData["Python"].projectData} primaryTechnology={"Python"} />} />
+            <Route exact path="/java" element={<Overview qualificationImages={ProjectData["Java"].qualificationImages} projectData={ProjectData["Java"].projectData} primaryTechnology={"Java"} />} />
             <Route exact path="/miscellaneous" element={<Overview qualificationImages={ProjectData["Miscellaneous"].qualificationImages} projectData={ProjectData["Miscellaneous"].projectData} primaryTechnology={"Miscellaneous"} />} />
           </Routes>
           <Footer />

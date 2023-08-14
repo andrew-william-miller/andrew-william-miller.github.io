@@ -148,7 +148,8 @@
                         "maoriScribeMainMenu": "Animated Main Menu. Randomized Māori words in the background. Many game options.",
                         "maoriScribeTOCManual": "The Manual Table of Contents.",
                         "maoriScribeManualPageExample": "One of the Many Pages of the manual I wrote, designed and implemented.",
-                        "maoriScribeNewGame": "The Game board, just starting a new game. Contains additional features such as the Māori dictionary word lookup."
+                        "maoriScribeNewGame": "The Game board, just starting a new game. Contains additional features such as the Māori dictionary word lookup.",
+                        "maoriScribeInProgress": "Example of an active game."
                     },
                     "screenshotsGifData": {}
                 },
@@ -189,6 +190,24 @@
                 }
             ]
         },
+        "Java":   {
+            
+            "qualificationImages": [
+                "javaEssentialTrainingForStudents", "javaTestingWithJUnit2016", "nailYourJavaInterview2018", 
+                "learningJava2018"
+            ],
+            "projectData": [
+                {
+                    "header": "Sudoku Mobile App",
+                    "description": "Classic Sudoku. Created in Android Studio with the Java language.",
+                    "screenshotsJpgData": {
+                        "sudokuApp": "Bootstrap cards were used with CSS to create a clean responsive layout.",
+                        "sudokuPhysicalPhone": "Testing App on Physical device (not just emulators)."
+                    },
+                    "screenshotsGifData": {}
+                }
+            ]
+        },
         "Miscellaneous":   {
             
             "qualificationImages": [],
@@ -198,6 +217,19 @@
                     "description": "An addon I created for the popular MMORPG World of Warcraft. This added uses the Lua programming language and Blizzard API. The purpose of the addon is to play a customisable notification sound when receiving private messages, reducing the chance of missing them. One of the challenges during development was the lack of documentation on creating these addons.",
                     "screenshotsJpgData": {"wowMessageAlertAddonCodeSnippet": "These addons are develooped using an event-driven architecture enabling developers respond to respond to in-game events for personalized interactions."},
                     "screenshotsGifData": {}
+                },
+                {
+                    "header": "Māori themed Sunrise Animation",
+                    "description": "JavaScript Canvas based Animation. Created for an assignment.",
+                    "screenshotsJpgData": {
+                        "canvasAnimation1": "Near the beginning of animation, starts off dark.",
+                        "canvasAnimation2": "Animation brightens as the sun rises whilst fish and birds move.",
+                        "canvasAnimation3": "Peak brightness as the Sun rises.",
+                        "canvasAnimation4": "Sun continues traveling across the sky."
+                    },
+                    "screenshotsGifData": {
+                        "canvasAnimation": "The beginning of the animation."
+                    }
                 }
             ]
         }

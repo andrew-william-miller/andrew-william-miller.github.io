@@ -46,7 +46,7 @@ const linkDictionary = {
     "PHP": "/php",
     "Unity": "/unity",
     "Python": "/python",
-    "Java": "",
+    "Java": "/java",
     "Miscellaneous": "/miscellaneous"
 }
 
