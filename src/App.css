@@ -234,8 +234,13 @@ footer {
   margin: 1.5rem auto 1rem;
   /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
+  padding: 0 2rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-content: center;
   align-items: center;
 }
 
@@ -355,6 +360,47 @@ figcaption {
   margin-bottom: 2rem;
 }
 
+/* ~~~~~~~~ Qualifications ~~~~~~~~ */
+.qualificationsContainer {
+  background-color: var(--containerBackgroundColor);
+  max-width: var(--maxContainerWidth);
+  margin: 1.5rem auto 1rem;
+  /* center the div when the window is larger than the max-width (top, horizontal, bottom) */
+  border-radius: 20px;
+}
+
+.qualificationsContainer h1, .qualificationsContainer h2 {
+  color: var(--primaryTextColor);
+  margin-left: 1.5rem;
+}
+
+.professionalContainer {
+  padding-bottom: 1rem;
+}
+
+.certificationTable {
+  color: white;
+  margin-left: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.certificationTable th {
+  text-align: left;
+}
+
+.certificationTable th:first-child {
+  width: 24rem;
+}
+
+.certificationTable th:nth-child(2) {
+  width: 8rem;
+}
+
+.swalQualificationBtn:hover {
+  cursor: pointer;
+  color: gold;
+}
+
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
 
 /* When below the max container width, we don't need to apply auto margins, instead apply enough to make the container look like it's floating.  */
@@ -364,7 +410,8 @@ figcaption {
   header,
   .skillsWrap,
   footer,
-  .overviewContainer {
+  .overviewContainer,
+  .qualificationsContainer {
     margin: 1.5rem 1rem 1rem;
     /* use this else auto center when the window is larger than max width (top, horizontal, bottom) */
   }
@@ -535,6 +582,7 @@ figcaption {
 }
 
 @media screen and (max-width: 600px) {
+    /* ~~~~~~~~ Skills Bar ~~~~~~~~ */
   .technologyWrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -553,5 +601,17 @@ figcaption {
   .aButton {
     font-size: 1.1rem;
     padding: 8px 36px; /* revert back to original padding as the current layout has more room for a bigger button */
+  }
+
+      /* ~~~~~~~~ Footer ~~~~~~~~ */
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    height: 5rem;
+    row-gap: 10px;
+  }
+
+  footer p {
+    margin: 0;
   }
 }

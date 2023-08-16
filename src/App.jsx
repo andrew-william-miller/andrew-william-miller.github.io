@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import ProjectData from './Data/projectOverview.json'
 import Overview from './Components/Overview'
 import ScrollToTop from './Components/ScrollToTop'
+import Qualifications from './Components/Qualifications'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/python" element={<Overview qualificationImages={ProjectData["Python"].qualificationImages} projectData={ProjectData["Python"].projectData} primaryTechnology={"Python"} />} />
         <Route path="/java" element={<Overview qualificationImages={ProjectData["Java"].qualificationImages} projectData={ProjectData["Java"].projectData} primaryTechnology={"Java"} />} />
         <Route path="/miscellaneous" element={<Overview qualificationImages={ProjectData["Miscellaneous"].qualificationImages} projectData={ProjectData["Miscellaneous"].projectData} primaryTechnology={"Miscellaneous"} />} />
+        <Route path="/qualifications" element={<Qualifications />} />
       </Routes>
       <Footer />
     </BrowserRouter>
