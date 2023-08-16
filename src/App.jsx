@@ -11,27 +11,28 @@ import ScrollToTop from './Components/ScrollToTop'
 function App() {
   return (
     <BrowserRouter>
-          <ScrollToTop />
-          <Header />
-          <Routes>
-            <Route path="*" element={<Skills />} />
-            <Route exact path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} primaryTechnology={"ReactJS"} />} />
-            <Route exact path="/aspnet" element={<Overview qualificationImages={ProjectData["ASPNET"].qualificationImages} projectData={ProjectData["ASPNET"].projectData} primaryTechnology={"ASP.NET"} />} />
-            <Route exact path="/reactnative" element={<Overview qualificationImages={ProjectData["React Native"].qualificationImages} projectData={ProjectData["React Native"].projectData} primaryTechnology={"React Native"} />} />
-            <Route exact path="/php" element={<Overview qualificationImages={ProjectData["PHP"].qualificationImages} projectData={ProjectData["PHP"].projectData} primaryTechnology={"PHP"} />} />
-            <Route exact path="/unity" element={<Overview qualificationImages={ProjectData["Unity"].qualificationImages} projectData={ProjectData["Unity"].projectData} primaryTechnology={"Unity"} />} />
-            <Route exact path="/python" element={<Overview qualificationImages={ProjectData["Python"].qualificationImages} projectData={ProjectData["Python"].projectData} primaryTechnology={"Python"} />} />
-            <Route exact path="/java" element={<Overview qualificationImages={ProjectData["Java"].qualificationImages} projectData={ProjectData["Java"].projectData} primaryTechnology={"Java"} />} />
-            <Route exact path="/miscellaneous" element={<Overview qualificationImages={ProjectData["Miscellaneous"].qualificationImages} projectData={ProjectData["Miscellaneous"].projectData} primaryTechnology={"Miscellaneous"} />} />
-          </Routes>
-          <Footer />
+      <ScrollToTop />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Skills />} />
+        <Route path="*" element={<Skills />} />
+        <Route path="/reactjs" element={<Overview qualificationImages={ProjectData["ReactJS"].qualificationImages} projectData={ProjectData["ReactJS"].projectData} primaryTechnology={"ReactJS"} />} />
+        <Route path="/aspnet" element={<Overview qualificationImages={ProjectData["ASPNET"].qualificationImages} projectData={ProjectData["ASPNET"].projectData} primaryTechnology={"ASP.NET"} />} />
+        <Route path="/reactnative" element={<Overview qualificationImages={ProjectData["React Native"].qualificationImages} projectData={ProjectData["React Native"].projectData} primaryTechnology={"React Native"} />} />
+        <Route path="/php" element={<Overview qualificationImages={ProjectData["PHP"].qualificationImages} projectData={ProjectData["PHP"].projectData} primaryTechnology={"PHP"} />} />
+        <Route path="/unity" element={<Overview qualificationImages={ProjectData["Unity"].qualificationImages} projectData={ProjectData["Unity"].projectData} primaryTechnology={"Unity"} />} />
+        <Route path="/python" element={<Overview qualificationImages={ProjectData["Python"].qualificationImages} projectData={ProjectData["Python"].projectData} primaryTechnology={"Python"} />} />
+        <Route path="/java" element={<Overview qualificationImages={ProjectData["Java"].qualificationImages} projectData={ProjectData["Java"].projectData} primaryTechnology={"Java"} />} />
+        <Route path="/miscellaneous" element={<Overview qualificationImages={ProjectData["Miscellaneous"].qualificationImages} projectData={ProjectData["Miscellaneous"].projectData} primaryTechnology={"Miscellaneous"} />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
 
 export default App
 
-/* 
+/*
           // <BrowserRouter>
           // <Routes>
           /*  {}/* <Route exact path="/" element={<Home />} />
@@ -40,4 +41,3 @@ export default App
     //      {/* A footer could be rendered here */ }
       // </BrowserRouter>
 
-      

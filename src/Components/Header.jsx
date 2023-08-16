@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
-import kirbyImage from '../assets/images/kirbyPlaceholder.jpg';
+import profilePic from '../assets/images/profilePic.png';
 
 const Header = () => {
 
     return (
         <header>
             <div className="profilePicWrap">
-                <Link to="/"><img className="profilePic" src={kirbyImage} /></Link>
+                <div className="profilePicBorder">
+                    <Link to="/"><img className="profilePic" src={profilePic} /></Link>
+                </div>
             </div>
             <Link to="/">
                 <div className="headerTitleWrap">

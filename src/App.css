@@ -81,11 +81,25 @@ header h2 {
   top: 3px;
 }
 
+.profilePicBorder {
+  position: relative;
+  background-color: var(--altBrightBlue);
+  clip-path: circle(48%);
+  width: 150px;
+  height: 150px;
+}
+
 .profilePic {
   width: 140px;
-  clip-path: circle(50%);
+  clip-path: circle(48%);
   margin-right: 2rem;
+  position: relative;
+  /* position the image ontop of the border div so that the border is only seen on 1 side */
+  top: -2px;
+  right: -2px;
 }
+
+
 
 
 
