@@ -118,6 +118,7 @@ header h2 {
   /* row-gap: 0; */
   height: 6rem;
   border-radius: 20px;
+  position: relative; /* allows the see more button to absolute align to this container  */
 }
 
 .skillsBar:not(:last-child) {
@@ -144,10 +145,29 @@ header h2 {
   align-self: center;
 }
 
-.skillsBar a {
-  text-align: right;
-  display: block;
+.skillsBar .seeMoreWrap {
+  text-align: left;
+  display: inline-block;
   margin-right: 3rem;
+  /* border: 3px solid violet;  */
+  align-self: center; /* Vertical align the button wrap within the skillBar */
+  /* position: absolute; */
+  /* top: 2px; */
+  /* bottom: 10px;
+  left: -20px; */
+}
+
+.aButton {
+  max-width:120px;
+  background-color: black;
+  align-self: center;
+  border: 2px solid var(--primaryTextColor);
+  /* border-radius: 50%; */
+  clip-path: circle(50%);
+  padding: 8px 36px;
+  font-size: 1.05rem;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .technologyWrap {
@@ -162,9 +182,6 @@ header h2 {
   /* margin-bottom: 0.5rem; /* stops the technology icons from reaching the bottom, not needed of SkillsBar height is not large */
   margin-bottom: 0;
   padding-bottom: 0;
-  /* if using flexbox */
-  /* position: relative;
-  top: 5px; */
 }
 
 .skillIcon {
@@ -371,6 +388,10 @@ figcaption {
   .skillsBar h1 {
     font-size: 2.6rem;
   }
+
+  .aButton {
+    padding: 7px 30px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -378,6 +399,10 @@ figcaption {
   /* ~~~~~~~~ SkillsBar ~~~~~~~~ */
   .skillsBar a {
     margin-right: 0.25rem;
+  }
+
+  .aButton {
+    padding: 6px 22px;
   }
 
   /* ~~~~~~~~ Header / Overview ~~~~~~~~ */
@@ -420,12 +445,16 @@ figcaption {
     /* Change to 1 column */
     grid-template-rows: 1fr 1fr 1fr;
     /* Create 3 rows */
-    height: 10.5rem;
+    height: 14rem;
+    row-gap: 10px;
   }
 
-  .skillsBar a {
-    text-align: left;
-    margin-left: 2rem;
+  .skillsBar .seeMoreWrap {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .aButton {
     font-size: 1.1rem;
   }
 
@@ -487,7 +516,7 @@ figcaption {
   }
 
   .skillsBar {
-    height: 16rem;
+    height: 18.5rem;
   }
 }
 
@@ -498,5 +527,17 @@ figcaption {
 
   .skillsBar {
     height: 22rem;
+  }
+
+  .skillsBar .seeMoreWrap {
+    position: absolute;
+    left: 50%; /* align relative to container */
+    transform: translateX(-63%); /* account for the width of self */
+    bottom: 20px;
+  }
+  
+  .aButton {
+    font-size: 1.1rem;
+    padding: 8px 36px; /* revert back to original padding as the current layout has more room for a bigger button */
   }
 }

@@ -63,7 +63,9 @@ const SkillsBar = ({ primarySkill, technologies }) => {
                     </div>
                 ))}
             </div>
-            <Link to={linkDictionary[primarySkill]}>See More...</Link>
+            <div className="seeMoreWrap">
+                <Link className="aButton" to={linkDictionary[primarySkill]}>See More...</Link>
+            </div>
         </div>
     );
 }
