@@ -378,7 +378,36 @@ figcaption {
   padding-bottom: 1rem;
 }
 
-.certificationTable {
+.linkedInTechnologyWrap {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  /* background-color: var(--altDarkBlue);
+  max-width: 40rem;
+  border-radius: 3%; */
+}
+
+.linkedInTechnologyWrap h3 {
+  color: var(--primaryTextColor);
+  font-size: 1.3rem;
+}
+
+.linkedInTechnologyWrap p {
+  color: white;
+  margin-right: 1rem;
+}
+
+.certificateWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 35rem;
+}
+
+.certificateWrap a:hover {
+  cursor: pointer;
+}
+
+/* .certificationTable {
   color: white;
   margin-left: 1.5rem;
   font-size: 1.05rem;
@@ -399,7 +428,7 @@ figcaption {
 .swalQualificationBtn:hover {
   cursor: pointer;
   color: gold;
-}
+} */
 
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
 
@@ -613,5 +642,11 @@ figcaption {
 
   footer p {
     margin: 0;
+  }
+
+  /* ~~~~~~~~ Qualifications ~~~~~~~~ */
+  .linkedInTechnologyWrap {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }

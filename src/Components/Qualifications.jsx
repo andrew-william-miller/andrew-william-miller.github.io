@@ -28,32 +28,80 @@ const Qualifications = () => {
     // title = show Technology elaborate
     // text = show Technology brief or consider leaving out? or switch these around (text show elaborate, title show brief?)
     // or put something else cos the qualification shows it.
-    const linkedInLearningData = [
-        { "image": beginnersGuideToCSharp, "name": "Beginners Guide To C Sharp", "technology": "C#" },
-        { "image": learningCSharp, "name": "Learning C Sharp", "technology": "C#" },
-        { "image": microsoftSQLServer2019EssentialTraining, "name": "Microsoft SQL Server 2019 Essential Training", "technology": "T-SQL" },
-        { "image": learningReactNative, "name": "Learning React Native", "technology": "React Native" },
-        { "image": reactNativeEssentialTraining, "name": "React Native Essential Training", "technology": "React Native" },
-        { "image": reactJSEssentialTraining, "name": "React JS Essential Training", "technology": "ReactJS" },
-        { "image": cSSForProgrammers, "name": "CSS For Programmers", "technology": "CSS" },
-        { "image": cSSEssentialTraining, "name": "CSS Essential Training", "technology": "CSS" },
-        { "image": cSSEnhancingInterfacesWithAnimation, "name": "CSS Enhancing Interfaces With Animation", "technology": "CSS" },
-        { "image": cSSTransformsAndTransitions, "name": "CSS Transforms And Transitions", "technology": "CSS" },
-        { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training", "technology": "Bootstrap" },
-        { "image": javaScriptEssentialTraining, "name": "JavaScript Essential Training", "technology": "JavaScript" },
-        { "image": javaScriptEssentialTraining2017, "name": "JavaScript Essential Training 2017", "technology": "JavaScript" },
-        { "image": javaScriptClasses2018, "name": "JavaScript Classes 2018", "technology": "JavaScript" },
-        { "image": learningGitAndGitHub2015, "name": "Learning Git And GitHub 2015", "technology": "Git" },
-        { "image": gitHubEssentialTraining, "name": "GitHub Essential Training", "technology": "Git" },
-        { "image": angularEssentialTraining, "name": "Angular Essential Training", "technology": "Angular" },
-        { "image": learningAngular, "name": "Learning Angular", "technology": "Angular" },
-        { "image": learningPHP, "name": "Learning PHP", "technology": "PHP" },
-        { "image": javaEssentialTrainingForStudents, "name": "Java Essential Training For Students", "technology": "Java" },
-        { "image": learningJava2018, "name": "Learning Java 2018", "technology": "Java" },
-        { "image": javaTestingWithJUnit2016, "name": "Java Testing With JUnit 2016", "technology": "Java" },
-        { "image": nailYourJavaInterview2018, "name": "Nail Your Java Interview 2018", "technology": "Java" }
-    ]
 
+    // don't forget to add icon as a key so you can use the icon. 
+    const linkedInLearningData =
+    {
+        "C#": {
+            "certificateData": [
+                { "image": beginnersGuideToCSharp, "name": "Beginners Guide To C Sharp" },
+                { "image": learningCSharp, "name": "Learning C Sharp" },
+            ]
+        },
+        "SQL": {
+            "certificateData": [
+                { "image": microsoftSQLServer2019EssentialTraining, "name": "Microsoft SQL Server 2019 Essential Training" }
+            ]
+        },
+        "React Native": {
+            "certificateData": [
+                { "image": learningReactNative, "name": "Learning React Native" },
+                { "image": reactNativeEssentialTraining, "name": "React Native Essential Training" }
+            ]
+        },
+        "React JS": {
+            "certificateData": [
+                { "image": reactJSEssentialTraining, "name": "React JS Essential Training" }
+            ]
+        },
+        "CSS": {
+            "certificateData": [
+                { "image": cSSForProgrammers, "name": "CSS For Programmers" },
+                { "image": cSSEssentialTraining, "name": "CSS Essential Training" },
+                { "image": cSSEnhancingInterfacesWithAnimation, "name": "CSS Enhancing Interfaces With Animation" },
+                { "image": cSSTransformsAndTransitions, "name": "CSS Transforms And Transitions" }
+            ]
+        },
+        "Bootstrap": {
+            "certificateData": [
+                { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training" }
+            ]
+        },
+        "JavaScript": {
+            "certificateData": [
+                { "image": javaScriptEssentialTraining, "name": "JavaScript Essential Training" },
+                { "image": javaScriptEssentialTraining2017, "name": "JavaScript Essential Training 2017" },
+                { "image": javaScriptClasses2018, "name": "JavaScript Classes 2018" }
+            ]
+        },
+        "Git": {
+            "certificateData": [
+                { "image": gitHubEssentialTraining, "name": "GitHub Essential Training" },
+                { "image": learningGitAndGitHub2015, "name": "Learning Git And GitHub 2015" }
+            ]
+        },
+        "Angular": {
+            "certificateData": [
+                { "image": angularEssentialTraining, "name": "Angular Essential Training" },
+                { "image": learningAngular, "name": "Learning Angular" }
+            ]
+        },
+        "PHP": {
+            "certificateData": [
+                { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training" }
+            ]
+        },
+        "Java": {
+            "certificateData": [
+                { "image": javaEssentialTrainingForStudents, "name": "Java Essential Training For Students" },
+                { "image": learningJava2018, "name": "Learning Java 2018" },
+                { "image": javaTestingWithJUnit2016, "name": "Java Testing With JUnit 2016" },
+                { "image": nailYourJavaInterview2018, "name": "Nail Your Java Interview 2018" }
+            ]
+        }
+    }
+
+    console.log("LinkedInLearningData", linkedInLearningData);
     return (
         <main className="qualificationsContainer">
             <div className="academicContainer">
@@ -62,34 +110,27 @@ const Qualifications = () => {
             <div className="professionalContainer">
                 <h1>Professional Development</h1>
                 <h2>LinkedIn Learning Certifications</h2>
-                <table className="certificationTable">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Technology</th>
-                            <th>Certification</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            linkedInLearningData.map(linkedInLearningData => (
-                                <tr key={linkedInLearningData.name}>
-                                    <td>{linkedInLearningData.name}</td>
-                                    <td>{linkedInLearningData.technology}</td>
-                                    <td className="swalQualificationBtn" onClick={() => {
+                {
+                    Object.keys(linkedInLearningData).map(technology => (
+                        <div className="linkedInTechnologyWrap" key={technology}>
+                            <h3>{technology}</h3>
+                            {linkedInLearningData[technology].certificateData.map(certificate => (
+                                <div className="certificateWrap" key={certificate.name}>
+                                    <p>{certificate.name}</p>
+                                    <a onClick={() => {
                                         Swal.fire({
                                             html: '<div class="loading-message">Image may take a few seconds to load...</div>',
                                             width: 1250,
-                                            imageUrl: linkedInLearningData.image,
-                                            imageAlt: `LinkedIn Learning Qualification. Topic: ${linkedInLearningData.name}`,
+                                            imageUrl: certificate.image,
+                                            imageAlt: `LinkedIn Learning Qualification. Topic: ${certificate.name}`,
                                             confirmButtonText: "Close"
                                         })
-                                    }} >See Qualification</td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
+                                    }} >See Qualification</a>
+                                </div>
+                            ))}
+                        </div>
+                    ))
+                }
             </div>
             <div className="Specialized Training">
 
