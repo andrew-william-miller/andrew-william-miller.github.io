@@ -405,30 +405,21 @@ figcaption {
 
 .certificateWrap a:hover {
   cursor: pointer;
-}
-
-/* .certificationTable {
-  color: white;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-.certificationTable th {
-  text-align: left;
-}
-
-.certificationTable th:first-child {
-  width: 24rem;
-}
-
-.certificationTable th:nth-child(2) {
-  width: 8rem;
-}
-
-.swalQualificationBtn:hover {
-  cursor: pointer;
   color: gold;
-} */
+}
+
+.academicContainer ul {
+  color: white;
+  list-style-type: upper-roman;
+}
+
+.academicContainer ul li {
+  padding-left: 15px;
+}
+
+.academicContainer ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
 
 /* ~~~~~~~~ Media Queries ~~~~~~~~ */
 

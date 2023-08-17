@@ -106,6 +106,12 @@ const Qualifications = () => {
         <main className="qualificationsContainer">
             <div className="academicContainer">
                 <h1>Academic Achievements</h1>
+                <ul>
+                    <li>Bachelor of Information and Communication Technologies</li>
+                    <li>Diploma of Information and Communication Technologies</li>
+                    <li>Diploma in Web Development</li>
+                    <li>Diploma in Software Development</li>
+                </ul>
             </div>
             <div className="professionalContainer">
                 <h1>Professional Development</h1>
@@ -120,7 +126,7 @@ const Qualifications = () => {
                                     <a onClick={() => {
                                         Swal.fire({
                                             html: '<div class="loading-message">Image may take a few seconds to load...</div>',
-                                            width: 1250,
+                                            width: 900,
                                             imageUrl: certificate.image,
                                             imageAlt: `LinkedIn Learning Qualification. Topic: ${certificate.name}`,
                                             confirmButtonText: "Close"
