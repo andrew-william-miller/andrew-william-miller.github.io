@@ -108,7 +108,7 @@ const Qualifications = () => {
         "PHP": {
             "icon": phpIcon,
             "certificateData": [
-                { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training" }
+                { "image": learningPHP, "name": "Learning PHP" }
             ]
         },
         "Java": {
