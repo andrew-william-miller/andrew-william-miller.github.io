@@ -439,6 +439,8 @@ figcaption {
   text-indent: 50px;
   /* shift out the text back into it's original position */
   margin: 0 10px 10px 0;
+  position: relative;
+  top: 14%;
 }
 
 .linkedInTechnologyWrap p {
