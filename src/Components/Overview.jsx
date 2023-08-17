@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ProjectOverview from './ProjectOverview';
 import { getKeyFromSrc } from '../Utility/helperFunctions';
+import { Link } from 'react-router-dom'
+import returnArrow from '../assets/images/icons/return.svg'
 
 
 const Overview = ({ qualificationImages, projectData, primaryTechnology }) => {
@@ -35,6 +37,7 @@ const Overview = ({ qualificationImages, projectData, primaryTechnology }) => {
 
   return (
     <main className="overviewContainer">
+      <div className="returnWrap"><Link className="returnLink" to="/"><img className="returnIcon" src={returnArrow} />Back to Main Page</Link></div>
       {projectData &&
         <div className="projectOverviewWrap">
           <h1>{primaryTechnology} Projects</h1>

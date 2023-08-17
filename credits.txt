@@ -64,7 +64,12 @@ Brand Icons by Aasaam
 - License: Creative Commons Zero v1.0 Universal
 - License  URL: https://choosealicense.com/licenses/cc0-1.0/
 
-
+Akar Icons
+- Modified the Color of left arrow
+- Creator: Arturo Wibawa
+- Website: https://iconduck.com/sets/akar-icons
+- License: MIT License
+- License  URL: https://choosealicense.com/licenses/mit/
 
 
 

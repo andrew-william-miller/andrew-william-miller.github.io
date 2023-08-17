@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+import returnArrow from '../assets/images/icons/return.svg'
 import angularEssentialTraining from '../assets/images/qualifications/linkedInLearning/angularEssentialTraining.jpg'
 import beginnersGuideToCSharp from '../assets/images/qualifications/linkedInLearning/beginnersGuideToCSharp.jpg'
 import bootstrap4EssentialTraining from '../assets/images/qualifications/linkedInLearning/bootstrap4EssentialTraining.jpg'
@@ -32,6 +34,7 @@ import phpIcon from '../assets/images/icons/technologies/php.svg'
 import gitIcon from '../assets/images/icons/technologies/git.svg'
 import angularIcon from '../assets/images/icons/technologies/angular.svg'
 import Swal from 'sweetalert2'
+
 
 const Qualifications = () => {
 
@@ -125,6 +128,7 @@ const Qualifications = () => {
     console.log("LinkedInLearningData", linkedInLearningData);
     return (
         <main className="qualificationsContainer">
+            <div className="returnWrap"><Link className="returnLink" to="/"><img className="returnIcon" src={returnArrow} />Back to Main Page</Link></div>
             <div className="academicContainer">
                 <h1>Academic Achievements</h1>
                 <ul>
@@ -142,7 +146,7 @@ const Qualifications = () => {
                         <div className="linkedInTechnologyWrap" key={technology}>
                             <div className="linkedInTechnologyHeader">
                                 <h3>{technology}</h3>
-                                <img src={linkedInLearningData[technology].icon} alt={`Icon of ${technology} technology`}/>
+                                <img src={linkedInLearningData[technology].icon} alt={`Icon of ${technology} technology`} />
                             </div>
                             {linkedInLearningData[technology].certificateData.map(certificate => (
                                 <div className="certificateWrap" key={certificate.name}>
