@@ -172,7 +172,7 @@ header h2 {
 }
 
 .aButton {
-  max-width:120px;
+  max-width: 120px;
   background-color: black;
   align-self: center;
   border: 2px solid var(--primaryTextColor);
@@ -290,11 +290,13 @@ figcaption {
 }
 
 .projectScreenshot {
-  /* border: 1px solid black; */ /* this line doesn't work well with the portrait logic, draws lines outside of the image because of object-fit: contain */
+  /* border: 1px solid black; */
+  /* this line doesn't work well with the portrait logic, draws lines outside of the image because of object-fit: contain */
   /* these lines are to help manage portrait images */
   max-height: 600px;
   object-fit: contain;
-  object-position: 50% 50%; /* This is the default but I want to be explicit about it */
+  object-position: 50% 50%;
+  /* This is the default but I want to be explicit about it */
 }
 
 figure {
@@ -369,9 +371,14 @@ figcaption {
   border-radius: 20px;
 }
 
-.qualificationsContainer h1, .qualificationsContainer h2 {
+.qualificationsContainer h1,
+.qualificationsContainer h2 {
   color: var(--primaryTextColor);
   margin-left: 1.5rem;
+}
+
+.qualificationsContainer h2 {
+  font-size: 1.8rem;
 }
 
 .professionalContainer {
@@ -381,14 +388,52 @@ figcaption {
 .linkedInTechnologyWrap {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  /* background-color: var(--altDarkBlue);
   max-width: 40rem;
-  border-radius: 3%; */
+  /* strong top right curve, subtle bottom right, normal on left side of container */
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 5%;
+  border: 6px solid var(--altDarkBlue);
+  padding: 10px;
+  /* important, stops the h3 background from rendering outside of the container curve on the top right */
+  overflow: hidden;
+}
+
+.linkedInTechnologyWrap:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.linkedInTechnologyWrap:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.linkedInTechnologyHeader {
+  /* the border / divider within the technology container between h3 and certificate data*/
+  border-bottom: 8px solid var(--altDarkBlue);
+  margin: 0;
+  /* Logics to get bottom line across the whole parent container (is a bit short without) */
+  position: relative;
+  width: 103%;
+  /* make the background / border a bit wider */
+  left: -9px;
+  /* shift the header back to fill the missing gap that the border didn't originally fill */
+  background-color: #859FAF;
+  top: -10px;
+  display: flex;
+}
+
+.linkedInTechnologyHeader img {
+  width: 27px;
+  position: absolute;
+  right: 40%;
+  top: 14%;
 }
 
 .linkedInTechnologyWrap h3 {
   color: var(--primaryTextColor);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  text-indent: 50px;
+  /* shift out the text back into it's original position */
+  margin: 0 10px 10px 0;
 }
 
 .linkedInTechnologyWrap p {
@@ -401,6 +446,13 @@ figcaption {
   align-items: center;
   justify-content: space-between;
   max-width: 35rem;
+  margin-left: 1rem;
+}
+
+.certificateWrap a {
+  /* prevents 'See Qualification from wrapping and makes the Qualification name (p tag) wrap sooner when space is run out instead
+  of making the a tag 'see qualification' wrap */
+  flex-shrink: 0;
 }
 
 .certificateWrap a:hover {
@@ -408,16 +460,18 @@ figcaption {
   color: gold;
 }
 
+
 .academicContainer ul {
   color: white;
   list-style-type: upper-roman;
+  margin-left: 1.5rem;
 }
 
 .academicContainer ul li {
   padding-left: 15px;
 }
 
-.academicContainer ul li:not(:last-child) {
+.academicContainer ul li {
   margin-bottom: 0.5rem;
 }
 
@@ -511,7 +565,7 @@ figcaption {
     font-size: 1.5rem;
   }
 
-  
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -534,7 +588,7 @@ figcaption {
     margin-left: 1rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .aButton {
     font-size: 1.1rem;
   }
@@ -562,6 +616,15 @@ figcaption {
 
   .email {
     font-size: 1.35rem;
+  }
+
+  /* ~~~~~~~~ Qualification ~~~~~~~~ */
+  .qualificationsContainer h1 {
+    font-size: 2rem;
+  }
+
+  .qualificationsContainer h2 {
+    font-size: 1.5rem;
   }
 
   /* ~~~~~ Overview ~~~~~ */
@@ -602,7 +665,8 @@ figcaption {
 }
 
 @media screen and (max-width: 600px) {
-    /* ~~~~~~~~ Skills Bar ~~~~~~~~ */
+
+  /* ~~~~~~~~ Skills Bar ~~~~~~~~ */
   .technologyWrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -613,17 +677,20 @@ figcaption {
 
   .skillsBar .seeMoreWrap {
     position: absolute;
-    left: 50%; /* align relative to container */
-    transform: translateX(-63%); /* account for the width of self */
+    left: 50%;
+    /* align relative to container */
+    transform: translateX(-63%);
+    /* account for the width of self */
     bottom: 20px;
   }
-  
+
   .aButton {
     font-size: 1.1rem;
-    padding: 8px 36px; /* revert back to original padding as the current layout has more room for a bigger button */
+    padding: 8px 36px;
+    /* revert back to original padding as the current layout has more room for a bigger button */
   }
 
-      /* ~~~~~~~~ Footer ~~~~~~~~ */
+  /* ~~~~~~~~ Footer ~~~~~~~~ */
   footer {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -639,5 +706,17 @@ figcaption {
   .linkedInTechnologyWrap {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .qualificationsContainer h1 {
+    font-size: 1.8rem;
+  }
+
+  .qualificationsContainer h2 {
+    font-size: 1.3rem;
+  }
+
+  .qualificationsContainer h3 {
+    font-size: 1.3rem;
   }
 }

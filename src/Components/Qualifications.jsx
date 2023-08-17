@@ -21,6 +21,16 @@ import microsoftSQLServer2019EssentialTraining from '../assets/images/qualificat
 import nailYourJavaInterview2018 from '../assets/images/qualifications/linkedInLearning/nailYourJavaInterview2018.jpg'
 import reactJSEssentialTraining from '../assets/images/qualifications/linkedInLearning/reactJSEssentialTraining.jpg'
 import reactNativeEssentialTraining from '../assets/images/qualifications/linkedInLearning/reactNativeEssentialTraining.jpg'
+import cssIcon from '../assets/images/icons/technologies/css.svg'
+import jsIcon from '../assets/images/icons/technologies/javascript.svg'
+import reactIcon from '../assets/images/icons/technologies/reactBlack.svg'
+import sqlIcon from '../assets/images/icons/technologies/sqlBlack.svg'
+import bootstrapIcon from '../assets/images/icons/technologies/bootstrap.svg'
+import cSharpIcon from '../assets/images/icons/technologies/c-sharp.svg'
+import javaIcon from '../assets/images/icons/technologies/java.svg'
+import phpIcon from '../assets/images/icons/technologies/php.svg'
+import gitIcon from '../assets/images/icons/technologies/git.svg'
+import angularIcon from '../assets/images/icons/technologies/angular.svg'
 import Swal from 'sweetalert2'
 
 const Qualifications = () => {
@@ -33,28 +43,33 @@ const Qualifications = () => {
     const linkedInLearningData =
     {
         "C#": {
+            "icon": cSharpIcon,
             "certificateData": [
                 { "image": beginnersGuideToCSharp, "name": "Beginners Guide To C Sharp" },
                 { "image": learningCSharp, "name": "Learning C Sharp" },
             ]
         },
         "SQL": {
+            "icon": sqlIcon,
             "certificateData": [
                 { "image": microsoftSQLServer2019EssentialTraining, "name": "Microsoft SQL Server 2019 Essential Training" }
             ]
         },
         "React Native": {
+            "icon": reactIcon,
             "certificateData": [
                 { "image": learningReactNative, "name": "Learning React Native" },
                 { "image": reactNativeEssentialTraining, "name": "React Native Essential Training" }
             ]
         },
         "React JS": {
+            "icon": reactIcon,
             "certificateData": [
                 { "image": reactJSEssentialTraining, "name": "React JS Essential Training" }
             ]
         },
         "CSS": {
+            "icon": cssIcon,
             "certificateData": [
                 { "image": cSSForProgrammers, "name": "CSS For Programmers" },
                 { "image": cSSEssentialTraining, "name": "CSS Essential Training" },
@@ -63,11 +78,13 @@ const Qualifications = () => {
             ]
         },
         "Bootstrap": {
+            "icon": bootstrapIcon,
             "certificateData": [
                 { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training" }
             ]
         },
         "JavaScript": {
+            "icon": jsIcon,
             "certificateData": [
                 { "image": javaScriptEssentialTraining, "name": "JavaScript Essential Training" },
                 { "image": javaScriptEssentialTraining2017, "name": "JavaScript Essential Training 2017" },
@@ -75,23 +92,27 @@ const Qualifications = () => {
             ]
         },
         "Git": {
+            "icon": gitIcon,
             "certificateData": [
                 { "image": gitHubEssentialTraining, "name": "GitHub Essential Training" },
                 { "image": learningGitAndGitHub2015, "name": "Learning Git And GitHub 2015" }
             ]
         },
         "Angular": {
+            "icon": angularIcon,
             "certificateData": [
                 { "image": angularEssentialTraining, "name": "Angular Essential Training" },
                 { "image": learningAngular, "name": "Learning Angular" }
             ]
         },
         "PHP": {
+            "icon": phpIcon,
             "certificateData": [
                 { "image": bootstrap4EssentialTraining, "name": "Bootstrap 4 Essential Training" }
             ]
         },
         "Java": {
+            "icon": javaIcon,
             "certificateData": [
                 { "image": javaEssentialTrainingForStudents, "name": "Java Essential Training For Students" },
                 { "image": learningJava2018, "name": "Learning Java 2018" },
@@ -119,7 +140,10 @@ const Qualifications = () => {
                 {
                     Object.keys(linkedInLearningData).map(technology => (
                         <div className="linkedInTechnologyWrap" key={technology}>
-                            <h3>{technology}</h3>
+                            <div className="linkedInTechnologyHeader">
+                                <h3>{technology}</h3>
+                                <img src={linkedInLearningData[technology].icon} alt={`Icon of ${technology} technology`}/>
+                            </div>
                             {linkedInLearningData[technology].certificateData.map(certificate => (
                                 <div className="certificateWrap" key={certificate.name}>
                                     <p>{certificate.name}</p>
