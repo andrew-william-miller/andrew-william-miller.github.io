@@ -377,8 +377,13 @@ figcaption {
   margin-left: 1.5rem;
 }
 
+.qualificationsContainer h1 {
+  padding-top: 0.75rem;
+}
+
 .qualificationsContainer h2 {
   font-size: 1.8rem;
+  padding-top: 0.5rem;
 }
 
 .professionalContainer {
@@ -412,7 +417,7 @@ figcaption {
   margin: 0;
   /* Logics to get bottom line across the whole parent container (is a bit short without) */
   position: relative;
-  width: 103%;
+  width: 105%;
   /* make the background / border a bit wider */
   left: -9px;
   /* shift the header back to fill the missing gap that the border didn't originally fill */
@@ -424,7 +429,7 @@ figcaption {
 .linkedInTechnologyHeader img {
   width: 27px;
   position: absolute;
-  right: 40%;
+  right: 35%;
   top: 14%;
 }
 
@@ -465,6 +470,7 @@ figcaption {
   color: white;
   list-style-type: upper-roman;
   margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .academicContainer ul li {
