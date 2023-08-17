@@ -60,6 +60,11 @@ header h2,
   /*white-space: nowrap; /* turn off text wrapping */
 }
 
+.emailWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
 header h1 {
   margin-bottom: 0;
 }
@@ -72,7 +77,6 @@ header h2 {
 .email {
   font-size: 2rem;
   color: var(--primaryTextColor);
-  /* text-align: center; */
 }
 
 .emailIcon {
@@ -441,7 +445,7 @@ figcaption {
   /* shift out the text back into it's original position */
   margin: 0 10px 10px 0;
   position: relative;
-  top: 14%;
+  top: 15%;
 }
 
 .linkedInTechnologyWrap p {
